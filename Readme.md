@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Roman Popov](https://up.htmlacademy.ru/htmlcss/33/user/1997457).
-* Наставник: `Неизвестно`.
+* Наставник: [Михаил Данюшин](https://htmlacademy.ru/profile/id225742).
 
 ---
 
