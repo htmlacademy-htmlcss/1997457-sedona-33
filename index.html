@@ -51,8 +51,8 @@
         </div>
 
         <!-- думаю тег section не нужен для заголовков-->
-        <h1 class="main-introduce">Седона — небольшой городок в Аризоне,</h1><br>
-        <h1 class="main-introduce"> заслуживающий большего!</h1>
+        <h2 class="main-introduce">Седона — небольшой городок в Аризоне,</h2><br>
+        <h2 class="main-introduce"> заслуживающий большего!</h2>
         <h2 class="main-advantages-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!</h2>
 
         <!-- cекция преимуществ Седоны -->
@@ -68,34 +68,40 @@
               <p class="advantages-description">для туристов</p>
               <p class="advantages-description">там течёт своя жизнь</p>
             </li>
-            <ul class="advantages-list">
-                <li class="advantages-item advantages-big"><img class="advantages-img"></li>
-                <li class="advantages-item">
-                  <img class="advantages-icon" src="">
-                  <b class="advantages-title title-bold">ЖИЛЬЁ</b>
-                  <p class="advantages-description description-black">Рекомендуем пожить</p>
-                  <p class="advantages-description description-black">в настоящем мотеле,</p>
-                  <p class="advantages-description description-black">всё как в кино!</p>
-                </li>
-                <li class="advantages-item">
-                  <img class="advantages-icon" src="">
-                  <b class="advantages-title title-bold">ЕДА</b>
-                  <p class="advantages-description description-black">Всегда заказывайте</p>
-                  <p class="advantages-description description-black">топовый фирменный бургер,</p>
-                  <p class="advantages-description description-black">вы не разочаруетесь!</p>
-                </li>
-                <li class="advantages-item">
-                  <img class="advantages-icon" src="">
-                  <b class="advantages-title title-bold">СУВЕНИРЫ</b>
-                  <p class="advantages-description description-black">Не только китайского,</p>
-                  <p class="advantages-description description-black">но и настоящего местного</p>
-                  <p class="advantages-description description-black">производства!</p>
-                </li>
-            </ul>
-            <li class="advantages-item advantages-big"><img class="advantages-img"></li>
+            <!-- возможно <li> блок пойдет в первый элемент упорядоченного списка -->
+            <li class="advantages-item"><ul class="advantages-list">
+                  <li class="advantages-item advantages-big"><img class="advantages-img" src="" alt="Изображение Седоны2"></li>
+                  <li class="advantages-item">
+                    <img class="advantages-icon" src="">
+                    <b class="advantages-title title-bold">ЖИЛЬЁ</b>
+                    <p class="advantages-description description-black">Рекомендуем пожить</p>
+                    <p class="advantages-description description-black">в настоящем мотеле,</p>
+                    <p class="advantages-description description-black">всё как в кино!</p>
+                  </li>
+                  <li class="advantages-item">
+                    <img class="advantages-icon" src="">
+                    <b class="advantages-title title-bold">ЕДА</b>
+                    <p class="advantages-description description-black">Всегда заказывайте</p>
+                    <p class="advantages-description description-black">топовый фирменный бургер,</p>
+                    <p class="advantages-description description-black">вы не разочаруетесь!</p>
+                  </li>
+                  <li class="advantages-item">
+                    <img class="advantages-icon" src="">
+                    <b class="advantages-title title-bold">СУВЕНИРЫ</b>
+                    <p class="advantages-description description-black">Не только китайского,</p>
+                    <p class="advantages-description description-black">но и настоящего местного</p>
+                    <p class="advantages-description description-black">производства!</p>
+                  </li>
+                </ul>
+            </li>
+            <!-- возможно <li> блок пойдет в первый элемент упорядоченного списка  тоже -->
+            <li class="advantages-item"><ul class="advantages-list">
+                  <li class="advantages-item advantages-big"><img class="advantages-img" src="" alt="Изображение Седоны3"></li>
+                </ul>
+            </li>
             <li class="advantages-item">
-              <h3 class="advantages-title">Там есть</h3>
-              <h3 class="advantages-title">мост дьявола</h3>
+              <h3 class="advantages-title">ТАМ ЕСТЬ</h3>
+              <h3 class="advantages-title">МОСТ ДЬЯВОЛА</h3>
               <p class="advantages-description">— №2 —</p>
               <p class="advantages-description">Да, по нему можно пройти! </p>
               <p class="advantages-description">Если вы осмелитесь,</p>
@@ -123,6 +129,27 @@
               <p class="advantages-description description-black">Каньон и толпится там</p>
             </li>
           </ol>
+        </section>
+        <!-- блок заинтересовались? -->
+        <section class="interests">
+          <h2 class="interests-title interests">ЗАИНТЕРЕСОВАЛИСЬ?</h2>
+          <p class="interests-description">Укажите предполагаемые даты поездки,</p>
+          <p class="interests-description">и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <a class="button button-search" href="#">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</a>
+        </section>
+        <!-- блок подписка -->
+        <section class="subscribe">
+          <h2 class="subscribe-title">ПОДПИШИТЕСЬ НА РАССЫЛКУ?</h2>
+          <p class="subscribe-description">Только полезная информация и никакого спама,</p>
+          <p class="subscribe-description">честное бойскаутское!</p>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="subscribe-form-block">
+              <label>
+                Ваш e-mail<input type="text" name="subscribe-name">
+              </label>
+            </p>
+            <button class="button button-subscribe" type="insert">ПОДПИСАТЬСЯ</button>
+          </form>
         </section>
 
 
