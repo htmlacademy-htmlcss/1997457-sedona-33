@@ -50,12 +50,89 @@
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadscrumbs">
         <li class="breadscrumbs-item">
-          <a class="breadscrums-text"></a>
+          <!-- здесь картинка -->
+          <a class="breadscrums-text" href="index.html"><img class="breadscrumbs-image" src="" alt=""></a>
         </li>
         <li class="breadscrumbs-item">
-          <a class="breadscrums-text">Гостиницы</a>
+          <a class="breadscrums-text" href="">Гостиницы</a>
         </li>
       </ul>
+
+      <section class="catalog-options">
+        <form class="catalog-form" action="https://echo.htmlacademy.ru/" method="get">
+          <h2 class="visually-hidden">Фильты для выбора гостиницы</h2>
+          <!-- Чекбоксы -->
+          <fieldset class="catalog-structure">
+            <legend class="catalog-legend">
+              Инфраструктура:
+            </legend>
+            <li class="catalog-item">
+              <label class="catalog-label">
+                <input class="catalog-checkbox" type="checkbox" name="pool" checked>
+                Бассейн
+              </label>
+            </li>
+            <li class="catalog-item">
+              <label class="catalog-label">
+                <input class="catalog-checkbox" type="checkbox" name="parking" checked>
+                Паркинг
+              </label>
+            </li>
+            <li class="catalog-item">
+              <label class="catalog-label">
+                <input class="catalog-checkbox" type="checkbox" name="wifi">
+                Wi-Fi
+              </label>
+            </li>
+          </fieldset>
+          <!-- Радио -->
+          <fieldset class="catalog-type">
+            <legend class="catalog-legend">
+              Тип жилья:
+            </legend>
+            <li class="catalog-item">
+              <label class="catalog-label">
+                <input class="catalog-radio" type="radio" name="filter-place" checked>
+                Гостиница
+              </label>
+            </li>
+            <li class="catalog-item">
+              <label class="catalog-label">
+                <input class="catalog-radio" type="radio" name="filter-place">
+                Отель
+              </label>
+            </li>
+            <li class="catalog-item">
+              <label class="catalog-options-label">
+                <input class="catalog-radio" type="radio" name="filter-place">
+                Апартаменты
+              </label>
+            </li>
+          </fieldset>
+          <!-- Ползунок, не знаю как поставить в поля фразы ОТ и ДО, а может и знаю-->
+          <label class="catalog-legend" for="catalog-range">Стоимость,₽:</label>
+          <input class="catalog-range-textbox" id="catalog-range" type="text" name="min" value="0" min="0" max="8999">
+          <span class="catalog-range-span">от</span>
+          <input class="ccatalog-range-textbox" id="catalog-range" type="text" name="max" value="9000" min="1" max="9000">
+          <span class="catalog-range-span">до</span>
+          <p class="catalog-progress"><progress max="9000" value="7000"></progress></p>
+
+          <!-- отправка формы -->
+          <button class="catalog-options-button" type="submit">
+            <span class="catalog-submit-span">
+              Применить
+            </span>
+          </button>
+          <button class="catalog-reset-button" type="reset">Сбросить</button>
+        </form>
+
+
+
+
+
+
+      </section>
+
 
 
 
