@@ -234,12 +234,68 @@
           Загрузить ещё
         </span>
       </a>
-
     </section>
-
-
+    <!-- пагинация -->
+    <section class="catalog-pagination">
+      <ul class="pagination-list">
+        <li class="pagination-item">
+          <a class="pagination-ref" href="catalog.html">
+            <span class="pagination-number pagination-current">1</span>
+          </a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-ref" href="catalog.html">
+            <span class="pagination-number">2</n>
+          </a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-ref" href="catalog.html">
+            <span class="pagination-number">3</n>
+          </a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-ref" href="catalog.html">
+            <span class="pagination-number">4</n>
+          </a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-ref" href="catalog.html">
+            <span class="pagination-number">...</n>
+          </a>
+        </li>
+        <li class="pagination-item">
+          <a class="pagination-ref" href="catalog.html">
+            <span class="pagination-number">10</n>
+          </a>
+        </li>
+      </ul>
+      <!-- количество отелей для отображения  -->
+      <p class="select-pagination-text">Гостиниц на странице:</p>
+      <select class="select-pagination" aria-label="Отображение" name="view">
+        <option value="4">4</option>
+        <option value="8">8</option>
+        <option value="12">12</option>
+      </select>
+    </section>
+    <!-- блок подписка -->
+    <section class="catalog-subscribe">
+      <!-- фоновое -->
+      <h2 class="catalog-subscribe-title">Подпишитесь на рассылку?</h2>
+      <p class="catalog-subscribe-description">
+        Только полезная информация и никакого спама, честное бойскаутское!
+      </p>
+      <form class="catalog-subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+        <p class="catalog-subscribe-text">
+          <label class="catalog-subscribe-label">
+            Ваш e-mail<input type="email" name="subscribe-name" required>
+          </label>
+        </p>
+        <button class="catalog-button button-subscribe" type="submit">
+          Подписаться
+        </button>
+      </form>
+    </section>
   </main>
-
   <!-- футер -->
   <footer class="footer-page">
     <section class="footer-web">
