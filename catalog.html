@@ -13,15 +13,15 @@
     <!-- Надписи в хэдэр -->
     <nav class="navigation">
       <ul class="navigation-list">
-          <li class="navigation-link-item">
-            <a class="navigation-link" href="">Главная</a>
-          </li>
-          <li class="navigation-link-item">
-            <a class="navigation-link" href="">О Седоне</a>
-          </li>
-          <li class="navigation-link-item">
-            <a class="navigation-link" href="hostels.html">Гостиницы</a>
-          </li>
+        <li class="navigation-link-item">
+          <a class="navigation-link" href="">Главная</a>
+        </li>
+        <li class="navigation-link-item">
+          <a class="navigation-link" href="">О Седоне</a>
+        </li>
+        <li class="navigation-link-item">
+          <a class="navigation-link" href="hostels.html">Гостиницы</a>
+        </li>
       </ul>
       <!-- Значки в хэдэр -->
       <ul class="navigation-list navigation-user">
@@ -46,12 +46,12 @@
 
   <main class="inner-main">
     <header class="inner-header">
-      <img class="inner-header-background" style="background-image:url();" src="" alt="">
+      <img class="inner-header-background" src="" alt="">
       <h1 class="inner-header-title">Гостиницы Седоны</h1>
       <ul class="breadscrumbs">
         <li class="breadscrumbs-item">
           <!-- здесь картинка -->
-          <a class="breadscrums-text" href="index.html"><img class="breadscrumbs-image" src="" alt=""></a>
+          <a class="breadscrums-text" href="index.html"></a>
         </li>
         <li class="breadscrumbs-item">
           <a class="breadscrums-text" href="">Гостиницы</a>
@@ -95,39 +95,39 @@
             <ul class="catalog-type-list">
               <li class="catalog-item">
                 <label class="catalog-label">
-                  <input class="catalog-radio" type="radio" name="filter-place" checked>
+                  <input class="catalog-radio" type="radio" name="filter-place" value="Hotel" checked>
                   Гостиница
                 </label>
               </li>
               <li class="catalog-item">
                 <label class="catalog-label">
-                  <input class="catalog-radio" type="radio" name="filter-place">
+                  <input class="catalog-radio" type="radio" name="filter-place" value="Hostel">
                   Отель
                 </label>
               </li>
               <li class="catalog-item">
                 <label class="catalog-options-label">
-                  <input class="catalog-radio" type="radio" name="filter-place">
+                  <input class="catalog-radio" type="radio" name="filter-place" value="apartments">
                   Апартаменты
                 </label>
               </li>
             </ul>
           </fieldset>
           <!-- Ползунок, не знаю как поставить в поля фразы ОТ и ДО, а может и знаю-->
-          <label class="catalog-legend" for="catalog-range">Стоимость,₽:</label>
-          <input class="catalog-range-textbox" id="catalog-range" type="text" name="min" value="0" min="0" max="8999">
-          <span class="catalog-range-span">от</span>
-          <input class="ccatalog-range-textbox" id="catalog-range" type="text" name="max" value="9000" min="1" max="9000">
-          <span class="catalog-range-span">до</span>
-          <p class="catalog-progress"><progress max="9000" value="7000"></progress></p>
+          <p class="catalog-legend">Стоимость,₽:</p>
+          <input class="catalog-range-textbox" id="catalog-range-min" type="number" name="min" value="0" min="0" max="8999">
+          <label class="catalog-range-text" for="catalog-range-min">от</label>
+          <input class="ccatalog-range-textbox" id="catalog-range-max" type="number" name="max" value="9000" min="1" max="9000">
+          <label class="catalog-range-text" for="catalog-range-max">до</label>
+          <!-- убрал рендж -->
 
           <!-- отправка формы -->
           <button class="catalog-options-button" type="submit">
-            <span class="catalog-submit-span">
-              Применить
-            </span>
+            Применить
           </button>
-          <button class="catalog-reset-button" type="reset">Сбросить</button>
+          <button class="catalog-reset-button" type="reset">
+            Сбросить
+          </button>
         </form>
       </section>
     </header>
@@ -142,11 +142,11 @@
         <option value="popular">Сначала популярные</option>
         <option value="expensive">Сначала дорогие</option>
       </select>
-      <!-- иконки компоновки отелей на странице -->
-      <ul class="hotels-placing-icons">
-        <li class="hotels-placing-item"></li>
-        <li class="hotels-placing-item"></li>
-        <li class="hotels-placing-item"></li>
+      <!-- Кнопочки компоновки отелей на странице -->
+      <ul class="hotels-placing-button">
+        <li class="hotels-placing-button"></li>
+        <li class="hotels-placing-button"></li>
+        <li class="hotels-placing-button"></li>
       </ul>
     </section>
     <!-- каталог отелей -->
@@ -160,15 +160,14 @@
           <p class="product-card-price">
             Гостиница <span class="product-card-price">от 4000 ₽</span>
           </p>
-          <a class="product-card-more button " href="#">Подробнее</a>
-          <a class="product-card-save button " href="#">В избранное</a>
+          <a class="product-card-more button" href="#">Подробнее</a>
+          <button class="product-card-save button" type="button">В избранное</button>
           <div class="product-stars">
+          <img class="product-stars" src="" alt="4 звезды">
           </div>
-          <div class="product-rate">
-            <span class="product-rate-description">
-              Рейтинг:8,5
-            </span>
-          </div>
+          <p class="product-rate">
+            Рейтинг:8,5
+          </p>
         </li>
         <!-- 2 отель -->
         <li class="catalog-card">
@@ -182,12 +181,11 @@
           <a class="product-card-more button " href="#">Подробнее</a>
           <a class="product-card-save button " href="#">В избранное</a>
           <div class="product-stars">
+            <img class="product-stars" src="" alt="3 звезды">
           </div>
-          <div class="product-rate">
-            <span class="product-rate-description">
-              Рейтинг:8,9
-            </span>
-          </div>
+          <p class="product-rate">
+            Рейтинг:8,9
+          </p>
         </li>
         <!-- 3 отель -->
         <li class="catalog-card">
@@ -201,12 +199,11 @@
           <a class="product-card-more button " href="#">Подробнее</a>
           <a class="product-card-save button-saved " href="#">В избранном</a>
           <div class="product-stars">
+            <img class="product-stars" src="" alt="2 звезды">
           </div>
-          <div class="product-rate">
-            <span class="product-rate-description">
-              Рейтинг:9,2
-            </span>
-          </div>
+          <p class="product-rate">
+            Рейтинг:9,2
+          </p>
         </li>
         <!-- 4 отель -->
         <li class="catalog-card">
@@ -220,12 +217,11 @@
           <a class="product-card-more button " href="#">Подробнее</a>
           <a class="product-card-save button-saved " href="#">В избранное</a>
           <div class="product-stars">
+            <img class="product-stars" src="" alt="2 звезды">
           </div>
-          <div class="product-rate">
-            <span class="product-rate-description">
-              Рейтинг:9,2
-            </span>
-          </div>
+          <p class="product-rate">
+            Рейтинг:9,2
+          </p>
         </li>
       </ul>
       <!-- кнопка Загрузить еще -->
@@ -239,32 +235,32 @@
     <section class="catalog-pagination">
       <ul class="pagination-list">
         <li class="pagination-item">
-          <a class="pagination-ref" href="catalog.html">
+          <a class="pagination-ref" href="#">
             <span class="pagination-number pagination-current">1</span>
           </a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-ref" href="catalog.html">
+          <a class="pagination-ref" href="#">
             <span class="pagination-number">2</n>
           </a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-ref" href="catalog.html">
+          <a class="pagination-ref" href="#">
             <span class="pagination-number">3</n>
           </a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-ref" href="catalog.html">
+          <a class="pagination-ref" href="#">
             <span class="pagination-number">4</n>
           </a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-ref" href="catalog.html">
+          <a class="pagination-ref" href="#">
             <span class="pagination-number">...</n>
           </a>
         </li>
         <li class="pagination-item">
-          <a class="pagination-ref" href="catalog.html">
+          <a class="pagination-ref" href="#">
             <span class="pagination-number">10</n>
           </a>
         </li>
@@ -302,17 +298,15 @@
       <ul class="footer-web-list">
         <li class="footer-item">
           <a class="footer-twitter" href="https://twitter.com/htmlacademy_ru">
-            <img class="footer-sign" src="" alt="">
           </a>
+          <!-- неконтентные просто удаляем? А то я у них удалил альт и все. Теперь полностью убрал тег img -->
         </li>
         <li class="footer-item">
           <a class="footer=facebook" href="https://www.facebook.com/htmlacademy">
-            <img class="footer-sign" src="" alt="">
           </a>
         </li>
         <li class="footer-item">
           <a class="footer-youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
-            <img class="footer-sign" src="" alt="">
           </a>
         </li>
       </ul>
