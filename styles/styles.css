@@ -64,4 +64,107 @@ header{
   line-height: 36px;
   color: #333333;
 }
-
+.advantages-item:nth-child(1),:nth-child(5) {
+  background-color: #83B3D3;
+}
+.advantages-item:nth-child(2n){
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.advantages-item:nth-child(7) {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+.advantages-title{
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+  color: inherit;
+}
+.advantages-title-white{
+  color: #FFFFFF;
+}
+.advantages-description{
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+.advantages-description-white{
+  color:#FFFFFF;
+}
+.advantages-number{
+  text-transform: uppercase;
+}
+.interests-title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+.interests-description{
+  font-size: 22px;
+  line-height: 26px;
+  color: #333333;
+}
+.button-search{
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #756257;
+  text-decoration: none;
+}
+.subscribe{
+  height: 411px;
+  background-color: #83B3D3;
+  background-image: url("../images/background_subscribe.jpg");
+  background-size: 100% 411px;
+  background-repeat: no-repeat;
+}
+.subscribe-title{
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+.subscribe-description{
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #FFFFFF;
+}
+.subscribe-label{
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+}
+.button-subscribe{
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  background-color: #83B3D3;
+}
+.footer-item-twitter{
+  background-image: url("../images/footer/logo_twitter.svg");
+  background-repeat: no-repeat;
+  background-size: 18px 14.96px;
+}
+.footer-item-facebook{
+  background-image: url("../images/footer/logo_facebook.svg");
+  background-repeat: no-repeat;
+  background-size: 10px 18px;
+}
+.footer-item-youtube{
+  background-image: url("../images/footer/logo_youtube.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 16px;
+}
+.footer-contacts-phone{
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #000000;
+}
