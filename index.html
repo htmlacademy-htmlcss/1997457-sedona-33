@@ -9,12 +9,12 @@
     <header class="header">
       <!-- Ярлык в хэдэр -->
       <a class="header-logo" href="#">
-        <img class="header-logo-image" src="" alt="Логотип сайта Седона" >
+        <img class="header-logo-image" src="images/header/logo_sedona.svg" alt="Логотип сайта Седона" height="70" width="139" >
       </a>
       <!-- Надписи в хэдэр -->
       <nav class="navigation">
         <ul class="navigation-list">
-          <li class="navigation-link-item">
+          <li class="navigation-link-item navigation-link-active">
             <a class="navigation-link" href="">Главная</a>
           </li>
           <li class="navigation-link-item">
@@ -46,11 +46,11 @@
     </header>
 
     <main class="main-index">
-      <!-- большая картинка Седоны  -->
-      <!-- надо подключить сss и сделать свойство background-image, а сейчас это никак не сделать -->
-        <!-- фоновая картинка -->
-        <!-- блок welcome прим. убрал картинки и текст -->
+        <!-- бэкграунд и разделитель-->
         <section class="main-welcome">
+        </section>
+        <!-- описание Седоны -->
+        <section class="main-description">
           <h2 class="main-introduce">Седона — небольшой городок в Аризоне,заслуживающий большего!</h2>
           <p class="main-introduce-text">
             Рассмотрим 5 причин, по которым Седона круче, чем Гранд-Каньон!
@@ -59,53 +59,57 @@
         <!-- cекция преимуществ Седоны -->
         <section class="advantages">
           <h2 class="visually-hidden">Преимущества</h2>
-          <ol class="advantages-list">
-            <!-- Надо делать Дивами? -->
-            <li class="advantages-item">
-              <h3 class="advantages-title">Настоящий городок</h3>
-              <!-- добавил span для номера — №1 — -->
-              <p class="advantages-description">
-                 <span class="advantages-number">— №1 —</span>
-                 Седона — не аттракцион для туристов там течёт своя жизнь
-              </p>
-            </li>
-            <!-- возможно <li> блок пойдет в первый элемент упорядоченного списка -->
-            <li class="advantages-item">
-              <ul class="advantages-list">
-                <li class="advantages-item advantages-big">
-                  <img class="advantages-img" src="" alt="Дома Седоны">
-                </li>
+          <!-- нумерованный список -->
+          <ol class="advantages-ordered-list">
+            <!-- первый элемент, широкий-->
+            <!-- Можно ли присваивать разный класс элементам одного списка, как сделано у первого и пятого элемента?? -->
+            <li class="advantages-wide">
+              <ul class="advantages-unordered-list">
+                <!-- делим на 2 части -->
                 <li class="advantages-item">
-                  <b class="advantages-title title-bold">Жильё</b>
-                  <p class="advantages-description description-black">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                  <h3 class="advantages-title">Настоящий городок</h3>
+                  <p class="advantages-description">
+                    <span class="advantages-number">— №1 —</span>
+                    Седона — не аттракцион для туристов там течёт своя жизнь
+                  </p>
                 </li>
-                <li class="advantages-item">
-                  <b class="advantages-title title-bold">Еда</b>
-                  <p class="advantages-description description-black">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
-                </li>
-                <li class="advantages-item">
-                  <b class="advantages-title title-bold">Сувениры</b>
-                  <p class="advantages-description description-black">Не только китайского, но и настоящего местного производства!</p>
+                <li class="advantages-item advantages-image">
+                  <img class="advantages-img" src="images/advantages_1.jpg" alt="Дома Седоны" height="384" width="800">
                 </li>
               </ul>
             </li>
-            <!-- возможно <li> блок пойдет в первый элемент упорядоченного списка  тоже -->
+            <!-- второй элемент -->
             <li class="advantages-item">
-              <ul class="advantages-list">
-                <li class="advantages-item advantages-big">
-                  <img class="advantages-img" src="" alt="Достопримечательности Седоны">
+              <b class="advantages-title title-bold">Жильё</b>
+              <p class="advantages-description description-black">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+            </li>
+            <!-- третий элемент-->
+            <li class="advantages-item">
+              <b class="advantages-title title-bold">Еда</b>
+              <p class="advantages-description description-black">Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
+            </li>
+            <!-- четвертый элемент -->
+            <li class="advantages-item">
+              <b class="advantages-title title-bold">Сувениры</b>
+              <p class="advantages-description description-black">Не только китайского, но и настоящего местного производства!</p>
+            </li>
+            <!-- пятый элемент, широкий -->
+            <li class="advantages-wide">
+              <ul class="advantages-unordered-list">
+                <!-- делим на 2 части -->
+                <li class="advantages-item">
+                  <h3 class="advantages-title">Там есть мост дьявола</h3>
+                  <p class="advantages-description">
+                    <span class="advantages-number">— №2 —</span>
+                    Седона — не аттракцион для туристов там течёт своя жизнь
+                  </p>
+                </li>
+                <li class="advantages-item advantages-image">
+                  <img class="advantages-img" src="images/advantages_2.jpg" alt="Мост дьявола" height="384" width="800">
                 </li>
               </ul>
             </li>
-            <li class="advantages-item">
-              <h3 class="advantages-title">Там есть Мост дьявола</h3>
-              <p class="advantages-description">
-                <span class="advantages-number">
-                  — №2 —
-                </span>
-                Да, по нему можно пройти! Если вы осмелитесь, разумеется
-              </p>
-            </li>
+            <!-- шестой элемент -->
             <li class="advantages-item">
               <h3 class="advantages-title title-bold">Небольшая площадь</h3>
               <p class="advantages-description description-black">
@@ -115,6 +119,7 @@
                 Все достопримечательности находятся очень близко
               </p>
             </li>
+            <!-- седьмой элемент -->
             <li class="advantages-item">
               <h3 class="advantages-title title-bold">Красивая дорога</h3>
               <p class="advantages-description description-black">
@@ -124,6 +129,7 @@
                 Ехать в Седону из Лас-Вегаса совсем не скучно!
               </p>
             </li>
+            <!-- восьмой элемент -->
             <li class="advantages-item">
               <h3 class="advantages-title title-bold">Мало туристов</h3>
               <p class="advantages-description description-black">
@@ -188,7 +194,7 @@
         +7 (812) 812-12-12
       </a>
       <a class="footer-logo" href="https://htmlacademy.ru/">
-        <img class="footer-logo-img" src="" alt="Переход на сайт:html.ru">
+        <img class="footer-logo-img" src="images/footer/logo_htmlacademy.svg" alt="Переход на сайт:html.ru" height="32.9" width="114.9">
       </a>
     </footer>
   </body>
