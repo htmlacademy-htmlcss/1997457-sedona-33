@@ -9,36 +9,44 @@
     <header class="header">
       <!-- Ярлык в хэдэр -->
       <a class="header-logo" href="#">
-        <img class="header-logo-image" src="images/header/logo_sedona.svg" alt="Логотип сайта Седона" height="70" width="139" >
+        <div class="header-logo-div" height="70" width="139">
+          <img class="header-logo-image" src="images/header/logo_sedona.svg" alt="Логотип сайта Седона">
+        </div>
       </a>
       <!-- Надписи в хэдэр -->
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-link-item navigation-link-active">
-            <a class="navigation-link" href="">Главная</a>
+            <a class="navigation-link" href="#">Главная</a>
           </li>
           <li class="navigation-link-item">
-            <a class="navigation-link" href="">О Седоне</a>
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-link-item">
-            <a class="navigation-link" href="hostels.html">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
         <!-- Значки в хэдэр -->
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navigation-link" href="#" >
+            <a class="navigation-link" href="#">
+              <div class="navigation-link-div" width="18.05px" height="18.01px">
+                <img class="navigation-search-icon" src="images/header/icon_search.svg">
+              </div>
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
+              <div class="navigation-link-div" width="42px" height="66px">
+                <img class="navigation-saves-icon" src="images/header/icon_saves.svg">
+              </div>
               <span class="visually-hidden">Избранное</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="navigation-link-description">Хочу сюда!</span>
+            <a class="navigation-link navigation-link-white" href="#">
+              <span span class="navigation-link-description">Хочу сюда!</span>
             </a>
           </li>
         </ul>
@@ -73,7 +81,9 @@
                   </p>
                 </li>
                 <li class="advantages-item-image">
-                  <img class="advantages-img" src="images/advantages_1.jpg" alt="Дома Седоны" height="384" width="800">
+                  <div class="advantages-div-home" height="384" width="800">
+                    <img class="advantages-image-home" src="images/advantages_1.jpg" alt="Дома Седоны">
+                  </div>
                 </li>
               </ul>
             </li>
@@ -104,7 +114,9 @@
                   </p>
                 </li>
                 <li class="advantages-item-image">
-                  <img class="advantages-img" src="images/advantages_2.jpg" alt="Мост дьявола" height="384" width="800">
+                  <div class="advantages-div-branch" height="384" width="800">
+                    <img class="advantages-image-branch" src="images/advantages_2.jpg" alt="Мост дьявола" >
+                  </div>
                 </li>
               </ul>
             </li>
@@ -176,14 +188,23 @@
         <ul class="footer-web-list">
           <li class="footer-item footer-item-twitter">
             <a class="footer-twitter" href="https://twitter.com/htmlacademy_ru">
+              <div class="footer-twitter-div" width="18px" height="14.96px">
+                <img class="footer-twitter-svg" src="../images/footer/logo_twitter.svg"></img>
+              </div>
             </a>
           </li>
           <li class="footer-item footer-item-facebook">
             <a class="footer-facebook" href="https://www.facebook.com/htmlacademy">
+              <div class="footer-facebook-div" width="10px" height="18px">
+                <img class="footer-facebook-svg" src="../images/footer/logo_facebook.svg"></img>
+              </div>
             </a>
           </li>
           <li class="footer-item footer-item-youtube">
             <a class="footer-youtube" href="https://www.youtube.com/c/HTMLAcademyRUS">
+              <div class="footer-youtube-div" width="20.1px" height="16px">
+                <img class="footer-youtube-svg" src="../images/footer/logo_youtube.svg"></img>
+              </div>
             </a>
           </li>
         </ul>
