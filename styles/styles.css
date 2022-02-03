@@ -40,6 +40,22 @@ img {
   display: inline-block;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 0px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+}
+
+.header-logo {
+  height:70px;
+  width:139px;
+}
+
 .navigation-link {
   font-size: 20px;
   line-height: 26px;
@@ -47,6 +63,16 @@ img {
   color: inherit;
   text-decoration: none;
   text-align: left;
+}
+
+.navigation-link-search {
+  height:19px;
+  width:20px;
+}
+
+.navigation-link-saves {
+  height: 66px;
+  width: 42px;
 }
 
 .navigation-link-white {
@@ -89,7 +115,10 @@ img {
   background-color: #83B3D3;
 }
 
-.advantages-item-home,.advantages-item-souvenirs,.advantages-item-area,.advantages-item-tourists {
+.advantages-item-home,
+.advantages-item-souvenirs,
+.advantages-item-area,
+.advantages-item-tourists {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
@@ -121,6 +150,11 @@ img {
 
 .advantages-number {
   text-transform: uppercase;
+}
+
+.advantages-item-image {
+  height: 384px;
+  width: 800;
 }
 
 .interests-title {
@@ -184,11 +218,31 @@ img {
   background-color: #83B3D3;
 }
 
+.footer-twitter {
+  height: 15px;
+  width: 18px;
+}
+
+.footer-facebook {
+  height: 10px;
+  width: 18px;
+}
+
+.footer-youtube {
+  height: 16px;
+  width: 20px;
+}
+
 .footer-contacts-phone {
   font-size: 40px;
   line-height: 40px;
   text-transform: uppercase;
   color: #000;
+}
+
+.footer-logo {
+  height: 33px;
+  width: 115px;
 }
 
 /* Каталог */
@@ -211,10 +265,16 @@ img {
   line-height: 78px;
 }
 
+.breadscrums-home {
+  width: 12px;
+  height: 12px;
+}
+
 .breadscrums-text {
   color:#FFF;
   font-size: 16px;
   line-height: 21px;
+
 }
 
 .catalog-legend {
@@ -270,12 +330,18 @@ img {
   color: #333333;
 }
 
-.product-card-link {
-
+.placing-button {
+  width: 16px;
+  height: 14px;
 }
 
 .product-card-link {
   text-decoration: none;
+}
+
+.product-card-div {
+  width: 290px;
+  height: 220px;
 }
 
 .product-card-title {
@@ -317,6 +383,21 @@ img {
 
 .product-card-saved {
   background: #7DB54F;
+}
+
+.product-four-stars {
+  width: 91px;
+  height: 17px;
+}
+
+.product-three-stars {
+  width: 68px;
+  height: 17px;
+}
+
+.product-two-stars {
+  width: 43px;
+  height: 17px;
 }
 
 .product-rate {
