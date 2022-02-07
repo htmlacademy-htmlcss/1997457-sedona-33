@@ -18,6 +18,20 @@
   font-display: swap;
 }
 
+/* временно */
+ul,ol {
+  outline: 5px dashed green;
+}
+
+li {
+  outline: 5px dotted blue;
+}
+/* временно */
+
+html {
+height: 100%;
+}
+
 body {
   font-family: "Pt Sans", "sans-serif", "Big Caslon";
   font-weight: 400;
@@ -26,6 +40,10 @@ body {
   background-color: #FFF;
   color: #000;
   margin: 0;
+  outline: 5px solid rgba(255, 99, 78, 0.5);
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
 }
 
 /* блоки */
@@ -38,6 +56,7 @@ img {
   max-width: 100%;
   height: auto;
   display: inline-block;
+  vertical-align: top;
 }
 
 .visually-hidden {
@@ -54,6 +73,25 @@ img {
 .header-logo {
   min-height:70px;
   min-width:139px;
+  display: block;
+}
+
+.navigation {
+  outline: 5px dotted blue;
+  display: flex;
+  width: 1060px;
+  margin: 0 auto;
+}
+
+.navigation-list {
+  margin: 0;
+  padding: 0;
+  width: 345px;
+}
+
+.navigation-user{
+  max-width: 300px;
+  margin-left: auto;
 }
 
 .navigation-link {
@@ -63,14 +101,6 @@ img {
   color: inherit;
   text-decoration: none;
   text-align: left;
-}
-
-.navigation-link-search {
-
-}
-
-.navigation-link-saves {
-
 }
 
 .navigation-link-white {
@@ -83,6 +113,16 @@ img {
   text-align: center;
 }
 
+.main-container {
+  outline: 5px solid red;
+  flex-grow: 1;
+}
+
+.page-container {
+width: 1200px;
+margin: 0 auto;
+}
+
 .main-welcome {
   width: auto;
   min-height: 485px;
@@ -92,8 +132,13 @@ img {
   background-repeat: no-repeat;
 }
 
+.welcome-beauty-text {
+  margin: 0 auto;
+}
+
 .main-description {
   background-color: #FFF;
+  flex-grow: 1;
 }
 
 .main-introduce {
@@ -109,8 +154,29 @@ img {
   color: #333;
 }
 
+.advantages-ordered-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.advantages-unordered-list {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+
 .advantages-item-wide {
   background-color: #83B3D3;
+  min-width: 1200px;
+}
+
+.advantages-block{
+  width: 400px;
+  max-width: 400px;
 }
 
 .advantages-item-home,
@@ -152,10 +218,20 @@ img {
 
 .advantages-item-image {
   min-height: 384px;
-  min-width: 800px;
+  width: 800px;
+  max-width: 800px;
+  margin-left: auto;
+}
+
+.interests {
+  width: 1200;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .interests-title {
+  width: 720px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -163,12 +239,15 @@ img {
 }
 
 .interests-description {
+  display: block;
   font-size: 22px;
   line-height: 26px;
   color: #333;
+  width: 592px;
 }
 
 .button-search {
+  display: block;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -176,9 +255,13 @@ img {
   color: #FFF;
   background-color: #756257;
   text-decoration: none;
+  width: 575px;
 }
 
 .subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 411px;
   background-color: #83B3D3;
   background-image: url("../images/background_subscribe.jpg");
@@ -187,6 +270,7 @@ img {
 }
 
 .subscribe-title {
+  width: 720px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -195,10 +279,17 @@ img {
 }
 
 .subscribe-description {
+  display: block;
+  width: 720px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #FFF;
+}
+
+.subscribe-form {
+  display: block;
+  width: 575px;
 }
 
 .subscribe-label {
@@ -216,16 +307,17 @@ img {
   background-color: #83B3D3;
 }
 
-.footer-twitter {
-
+.page-footer-container {
+  display: flex;
+  width: 1200px;
+  margin: 0 auto;
+  justify-content: center;
 }
 
-.footer-facebook {
-
-}
-
-.footer-youtube {
-
+.footer-web {
+  min-width: 107px;
+  margin-right: 61px;
+  margin-left: 72px;
 }
 
 .footer-contacts-phone {
@@ -235,8 +327,17 @@ img {
   color: #000;
 }
 
-.footer-logo {
+.footer-contacts-phone {
+  display: block;
+  min-width: 720px;
+  margin-right: 53px;
+  text-align: center;
+}
 
+.footer-logo {
+  display: block;
+  min-width: 115px;
+  margin-right: 72px;
 }
 
 /* Каталог */
