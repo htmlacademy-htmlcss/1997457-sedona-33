@@ -74,6 +74,7 @@ img {
   min-height:70px;
   min-width:139px;
   display: block;
+  margin-right: 30px;
 }
 
 .navigation {
@@ -351,6 +352,7 @@ margin: 0 auto;
   background-image: url("../images/catalog/catalog-background.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
+
 }
 
 .inner-header-title {
@@ -358,6 +360,7 @@ margin: 0 auto;
   font-weight: 700;
   font-size: 60px;
   line-height: 78px;
+  margin: 0;
 }
 
 .breadscrums-home {
@@ -369,6 +372,30 @@ margin: 0 auto;
   font-size: 16px;
   line-height: 21px;
 
+}
+
+.catalog-options {
+
+}
+
+.catalog-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.catalog-structure {
+  margin: 0;
+  width: 150px;
+}
+
+.catalog-type {
+  margin: 0;
+  width: 150px;
+}
+
+.catalog-legend-div {
+  width: 287px;
 }
 
 .catalog-legend {
@@ -392,6 +419,10 @@ margin: 0 auto;
   text-align: right;
   font-size: 18px;
   line-height: 23px;
+}
+
+.catalog-options-button-div {
+  width: 160px;
 }
 
 .catalog-options-button {
