@@ -18,18 +18,27 @@
   font-display: swap;
 }
 
+/* попробуем */
+* {
+  box-sizing: border-box;
+}
+
 /* временно */
 ul,ol {
+  margin: 0;
+  padding: 0;
   outline: 5px dashed green;
 }
 
 li {
   outline: 5px dotted blue;
+  margin: 0;
+  padding: 0;
 }
 /* временно */
 
 html {
-height: 100%;
+  height: 100%;
 }
 
 body {
@@ -75,6 +84,7 @@ img {
   min-width:139px;
   display: block;
   margin-right: 30px;
+  margin-left: 70px;
 }
 
 .navigation {
@@ -85,6 +95,9 @@ img {
 }
 
 .navigation-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   margin: 0;
   padding: 0;
   width: 345px;
@@ -95,6 +108,15 @@ img {
   margin-left: auto;
 }
 
+.navigation-link-active {
+  margin-left: 17px;
+  margin-right: 34px;
+}
+
+.navigation-about {
+  margin-right: 34px;
+}
+
 .navigation-link {
   font-size: 20px;
   line-height: 26px;
@@ -102,6 +124,10 @@ img {
   color: inherit;
   text-decoration: none;
   text-align: left;
+}
+
+.navigation-saves {
+  margin-right: 20px;
 }
 
 .navigation-link-white {
@@ -120,7 +146,9 @@ img {
 }
 
 .page-container {
-width: 1200px;
+max-width: 1280px;
+padding: 0 40px;
+width: 100%;
 margin: 0 auto;
 outline: 1px solid rgba(255, 99, 78, 0.5);
 }
@@ -160,15 +188,15 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
 
 .advantages-unordered-list {
-  display: inline;
+  display: flex;
   margin: 0;
   padding: 0;
+  flex-wrap: wrap;
 }
 
 .advantages-item-wide {
@@ -178,7 +206,6 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
 
 .advantages-block{
   width: 400px;
-  max-width: 400px;
 }
 
 .advantages-item-home,
@@ -221,19 +248,16 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
 .advantages-item-image {
   min-height: 384px;
   width: 800px;
-  max-width: 800px;
   margin-left: auto;
 }
 
 .interests {
-  width: 1200;
-  display: flex;
-  flex-direction: column;
+  width: 1200px;
+
   align-items: center;
 }
 
 .interests-title {
-  width: 720px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -242,6 +266,7 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
 
 .interests-description {
   display: block;
+  margin: 0 auto;
   font-size: 22px;
   line-height: 26px;
   color: #333;
@@ -250,6 +275,7 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
 
 .button-search {
   display: block;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
@@ -282,6 +308,7 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
 
 .subscribe-description {
   display: block;
+  margin: 0 auto;
   width: 720px;
   font-size: 22px;
   line-height: 26px;
@@ -290,7 +317,8 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
 }
 
 .subscribe-form {
-  display: block;
+  display: flex;
+  align-items: center;;
   width: 575px;
 }
 
@@ -312,6 +340,8 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
 .page-footer-container {
   display: flex;
   width: 1200px;
+  padding-top: 42px;
+  padding-bottom: 44px;
   margin: 0 auto;
   justify-content: center;
 }
@@ -320,6 +350,19 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
   min-width: 107px;
   margin-right: 61px;
   margin-left: 72px;
+}
+
+.footer-web-list {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer-item-twitter {
+  margin-right: 29px;
+}
+
+.footer-item-facebook {
+  margin-right: 30px;
 }
 
 .footer-contacts-phone {
@@ -381,45 +424,86 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
 
 .catalog-form {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalog-form-div {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.catalog-second-form-div {
+  display: flex;
+  justify-content: space-between;
 }
 /* не знаю какие марджины подбирать к детям поэтому justify-content: space-evenly */
 
 .catalog-structure {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   margin: 0;
+  padding: 0;
+  border: none;
   width: 150px;
+  margin-left: 72px;
 }
 
 .catalog-structure-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
+  width: 144px;
+
+}
+
+.catalog-checkbox {
 }
 
 .catalog-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: none;
   margin: 0;
   width: 150px;
+  margin-left: 67px;
 }
 
 .catalog-type-list {
+  width: 144px;
   margin: 0;
   padding: 0;
 }
 
 .catalog-legend-div {
-  width: 287px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: 81px;
 }
 
 .catalog-legend {
-  margin-right: 216px;
+  margin: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+  text-align: left;
 }
 
 .catalog-item {
+  text-align: left;
+  width: 144px;
   font-size: 18px;
   line-height: 23px;
+}
+
+.catalog-label {
+  text-align: start;
 }
 
 .catalog-range-textbox {
@@ -435,7 +519,11 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
 }
 
 .catalog-options-button-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 160px;
+  margin-right: 72px;
 }
 
 .catalog-options-button {
@@ -456,7 +544,6 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
 
 .section-hotels {
   display: flex;
-  flex-direction: row;
   margin: 0 auto;
   width: 1057px;
 }
@@ -487,8 +574,6 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: row;
-  margin-right: auto;
 }
 
 .hotels-placing-item {
@@ -506,7 +591,6 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
   width: 1056px;
   margin: 0 auto;
   padding: 0;
-  flex-direction: row;
   flex-wrap: wrap;
 
 }
@@ -611,7 +695,6 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
   padding: 0;
   width: 1056px;
   display: flex;
-  flex-direction: row;
 }
 
 .pagination-list {
@@ -653,7 +736,6 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
   padding: 0;
   width: 386px;
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
 }
 
