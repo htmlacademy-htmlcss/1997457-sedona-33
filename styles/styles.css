@@ -146,7 +146,9 @@ img {
 }
 
 .page-container {
-width: 1200px;
+max-width: 1280px;
+padding: 0 40px;
+width: 100%;
 margin: 0 auto;
 outline: 1px solid rgba(255, 99, 78, 0.5);
 }
@@ -422,44 +424,86 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
 
 .catalog-form {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.catalog-form-div {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.catalog-second-form-div {
+  display: flex;
+  justify-content: space-between;
 }
 /* не знаю какие марджины подбирать к детям поэтому justify-content: space-evenly */
 
 .catalog-structure {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   margin: 0;
+  padding: 0;
+  border: none;
   width: 150px;
+  margin-left: 72px;
 }
 
 .catalog-structure-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
+  width: 144px;
+
+}
+
+.catalog-checkbox {
 }
 
 .catalog-type {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: none;
   margin: 0;
   width: 150px;
+  margin-left: 67px;
 }
 
 .catalog-type-list {
+  width: 144px;
   margin: 0;
   padding: 0;
 }
 
 .catalog-legend-div {
-  width: 287px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: auto;
+  margin-right: 81px;
 }
 
 .catalog-legend {
-  margin-right: 216px;
+  margin: 0;
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
+  text-align: left;
 }
 
 .catalog-item {
+  text-align: left;
+  width: 144px;
   font-size: 18px;
   line-height: 23px;
+}
+
+.catalog-label {
+  text-align: start;
 }
 
 .catalog-range-textbox {
@@ -475,7 +519,11 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
 }
 
 .catalog-options-button-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 160px;
+  margin-right: 72px;
 }
 
 .catalog-options-button {
