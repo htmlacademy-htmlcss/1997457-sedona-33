@@ -20,6 +20,8 @@
 
 /* временно */
 ul,ol {
+  margin: 0;
+  padding: 0;
   outline: 5px dashed green;
 }
 
@@ -160,7 +162,6 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
@@ -381,7 +382,6 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
 
 .catalog-form {
   display: flex;
-  flex-direction: row;
   justify-content: space-evenly;
 }
 /* не знаю какие марджины подбирать к детям поэтому justify-content: space-evenly */
@@ -456,7 +456,6 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
 
 .section-hotels {
   display: flex;
-  flex-direction: row;
   margin: 0 auto;
   width: 1057px;
 }
@@ -487,7 +486,6 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
   margin: 0;
   padding: 0;
   display: flex;
-  flex-direction: row;
   margin-right: auto;
 }
 
@@ -506,7 +504,6 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
   width: 1056px;
   margin: 0 auto;
   padding: 0;
-  flex-direction: row;
   flex-wrap: wrap;
 
 }
@@ -611,7 +608,6 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
   padding: 0;
   width: 1056px;
   display: flex;
-  flex-direction: row;
 }
 
 .pagination-list {
@@ -653,7 +649,6 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
   padding: 0;
   width: 386px;
   display: flex;
-  flex-direction: row;
   justify-content: flex-end;
 }
 
