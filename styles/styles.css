@@ -24,11 +24,11 @@ ul,ol {
   margin: 0;
   padding: 0;
   list-style: none;
-  outline: 5px dashed green;
+  outline: 1px dashed green;
 }
 
 li {
-  outline: 5px dotted blue;
+  outline: 1px dotted blue;
   margin: 0;
   padding: 0;
 }
@@ -45,7 +45,7 @@ body {
   background-color: #FFF;
   color: #000;
   margin: 0;
-  outline: 5px solid rgba(255, 99, 78, 0.5);
+  outline: 1px solid rgba(255, 99, 78, 0.5);
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -75,21 +75,31 @@ img {
   clip: rect(0, 0, 0, 0);
 }
 
-.page-header-container {
+.header-container {
+  margin: 0 auto;
+  margin-bottom: 0;
   max-width: 1280px;
-  padding: 0 70px;
+  padding: 0 40px;
+  width: 100%;
+  background: #E5E5E5;
+}
+
+.page-header-container {
+  padding: 0 20px;
   width: 100%;
   margin: 0 auto;
   outline: 1px solid greenyellow;
+  background: #fff;
 }
 
 .navigation {
-  outline: 5px dotted blue;
+  outline: 1px dotted blue;
   display: flex;
   width: 100%;
+  height: 70px;
   margin: 0 auto;
+  margin-bottom: 0;
 }
-
 
 .header-logo {
   min-height:70px;
@@ -106,56 +116,82 @@ img {
   margin: 0;
   padding: 0;
   width: 345px;
+  height: 66px;
+}
+
+.navigation-list-main {
+  margin-right: auto;
 }
 
 .navigation-user{
-  max-width: 300px;
-  margin-left: auto;
+  width: 264px;
+  height: 66px;
 }
 
 .navigation-link-active {
-  margin-left: 17px;
-  margin-right: 34px;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .navigation-about {
-  margin-right: 34px;
+  margin-right: 0;
 }
 
 .navigation-link {
+  display: block;
   font-size: 20px;
   line-height: 26px;
   font-weight: 700;
   color: inherit;
   text-decoration: none;
-  text-align: left;
+  text-align: center;
+  padding: 20px 17px;
 }
 
-.navigation-saves {
-  margin-right: 20px;
+.navigation-user .navigation-link-search {
+  width: 42px;
+  height: 66px;
 }
 
-.navigation-link-white {
+.navigation-user .navigation-link-saves {
+  margin: 0;
+  padding: 0;
+  width: 42px;
+  height: 66px;
+}
+
+.navigation-item-button {
+  padding-left: 20px;
+}
+
+.navigation-user .navigation-link-white {
+  display: block;
   color:#FFF;
   background: #756257;
+  width: 160px;
+  height: 37px;
 }
 
 .main-index {
-  background-color: #fff;
   text-align: center;
 }
 
 .main-container {
-  outline: 5px solid red;
   flex-grow: 1;
+  margin-top: 0;
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 40px;
+  width: 100%;
+  background: #E5E5E5;
 }
 
 .page-main-container {
-max-width: 1280px;
-padding: 0 40px;
-width: 100%;
-margin: 0 auto;
-outline: 1px solid rgba(255, 99, 78, 0.5);
+  width: 100%;
+  margin: 0 auto;
+  outline: 1px solid rgba(255, 99, 78, 0.5);
+  background-color: #fff;
+  outline: 1px solid red;
 }
 
 .main-welcome {
@@ -165,6 +201,7 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
   background-image: url("../images/background_welcome.jpg");
   background-size: 100% 485px;
   background-repeat: no-repeat;
+  padding-top: 51.4px;
 }
 
 .welcome-beauty-text {
@@ -351,11 +388,19 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
   background-color: #83B3D3;
 }
 
-.page-footer-container {
-  display: flex;
+.footer-container {
   max-width: 1280px;
   width: 100%;
-  padding: 0 72px;
+  padding: 0 40px;
+  margin: 0 auto;
+  background: #E5E5E5;
+}
+
+.page-footer-container {
+  background: #fff;
+  display: flex;
+  width: 100%;
+  padding: 0 32px;
   padding-top: 42px;
   padding-bottom: 44px;
   margin: 0 auto;
@@ -398,10 +443,6 @@ outline: 1px solid rgba(255, 99, 78, 0.5);
 .footer-logo {
   display: block;
   min-width: 115px;
-}
-
-.inner-main {
-  background-color: #fff;
 }
 
 .inner-header {
