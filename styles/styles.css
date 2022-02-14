@@ -206,7 +206,22 @@ img {
 
 .welcome-beauty-text {
   margin: 0 auto;
+}
+
+.beauty-sedona {
   margin-bottom: 11px;
+}
+
+.beauty-gorgeus {
+  margin-bottom: 53.32px;
+}
+
+.beauty-because {
+  margin-bottom: auto;
+}
+
+.welcome-divider {
+  padding: 0;
 }
 
 .main-description {
