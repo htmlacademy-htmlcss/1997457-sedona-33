@@ -149,8 +149,14 @@ img {
 }
 
 .navigation-user .navigation-link-search {
-  width: 42px;
+  padding: 0 11.97px;
+  padding-top: 22px;
+  padding-bottom: 26px;
   height: 66px;
+}
+
+.navigation-saves {
+  margin-right: 20px;
 }
 
 .navigation-user .navigation-link-saves {
@@ -160,12 +166,9 @@ img {
   height: 66px;
 }
 
-.navigation-item-button {
-  padding-left: 20px;
-}
-
 .navigation-user .navigation-link-white {
   display: block;
+  padding: 0;
   color:#FFF;
   background: #756257;
   width: 160px;
@@ -505,9 +508,9 @@ img {
   background: #fff;
   display: flex;
   width: 100%;
-  padding: 0 32px;
-  padding-top: 42px;
-  padding-bottom: 44px;
+  padding: 0 72px;
+  padding-top: 40px;
+  padding-bottom: 30px;
   margin: 0 auto;
   justify-content: center;
   outline: 1px solid yellowgreen;
@@ -516,6 +519,8 @@ img {
 .footer-web {
   min-width: 107px;
   margin-right: 61px;
+  margin-top: 9px;
+  margin-bottom: 23px;
 }
 
 .footer-web-list {
@@ -548,6 +553,8 @@ img {
 .footer-logo {
   display: block;
   min-width: 115px;
+  margin-top: 4px;
+  margin-bottom: 14px;
 }
 
 .inner-header {
