@@ -149,8 +149,14 @@ img {
 }
 
 .navigation-user .navigation-link-search {
-  width: 42px;
+  padding: 0 11.97px;
+  padding-top: 22px;
+  padding-bottom: 26px;
   height: 66px;
+}
+
+.navigation-saves {
+  margin-right: 20px;
 }
 
 .navigation-user .navigation-link-saves {
@@ -160,12 +166,9 @@ img {
   height: 66px;
 }
 
-.navigation-item-button {
-  padding-left: 20px;
-}
-
 .navigation-user .navigation-link-white {
   display: block;
+  padding: 0;
   color:#FFF;
   background: #756257;
   width: 160px;
@@ -189,35 +192,60 @@ img {
 .page-main-container {
   width: 100%;
   margin: 0 auto;
-  outline: 1px solid rgba(255, 99, 78, 0.5);
   background-color: #fff;
   outline: 1px solid red;
 }
 
 .main-welcome {
   width: auto;
-  min-height: 485px;
+  max-height: 485px;
   background-color: #FFF;
   background-image: url("../images/background_welcome.jpg");
   background-size: 100% 485px;
   background-repeat: no-repeat;
   padding-top: 51.4px;
+  outline: 1px solid red;
 }
 
-.welcome-beauty-text {
+.beauty-sedona {
+  width: 188px;
   margin: 0 auto;
+  margin-bottom: 11px;
+}
+
+.beauty-gorgeus {
+  width: 256px;
+  margin: 0 auto;
+  margin-bottom: 53.32px;
+}
+
+.beauty-because {
+  width: 457px;
+  margin: 0 auto;
+  height: 217px;
+  margin-bottom: 25px;
+}
+
+.welcome-divider {
+  padding: 0;
 }
 
 .main-description {
+  width: 100%;
+  height: 282px;
+  padding-top: 63px;
   background-color: #FFF;
 }
 
 .main-introduce {
-  margin: 0;
+  margin: 0 auto;
+  margin-bottom: 31px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   text-transform: uppercase;
+  width: 720px;
+  height: 72px;
 }
 
 .main-introduce-text {
@@ -225,6 +253,7 @@ img {
   font-size: 22px;
   line-height: 36px;
   color: #333;
+  margin-bottom: 80px;
 }
 
 .advantages {
@@ -251,8 +280,25 @@ img {
   min-width: 1200px;
 }
 
+.advantages-item-wide .advantages-block,
+.advantages-item.advantages-item-area,
+.advantages-item.advantages-item-road,
+.advantages-item.advantages-item-tourists {
+  padding-top: 98px;
+}
+
+.advantages-item-wide .advantages-title,
+.advantages-item-area .title-bold,
+.advantages-item-road .title-bold,
+.advantages-item-tourists .title-bold {
+  margin: 0 auto;
+  margin-bottom: 29px;
+  height: 56px;
+}
+
 .advantages-block{
   width: 400px;
+  max-height: 384px;
 }
 
 .advantages-item-home,
@@ -262,8 +308,41 @@ img {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
+.advantages-item-home,
+.advantages-item-food,
+.advantages-item-souvenirs {
+  padding-top: 85px;
+}
+
+.advantages-block-div {
+  margin-bottom: 23px;
+}
+
 .advantages-item-road {
   background-color: rgba(131, 179, 211, 0.2);
+}
+
+.advantages-image-food {
+  padding-top: 6px;
+}
+
+.advantages-item-home .title-bold,
+.advantages-item-food .title-bold,
+.advantages-item-souvenirs .title-bold {
+  display: block;
+  margin-bottom: 20px;
+}
+
+.advantages-item-home .advantages-description,
+.advantages-item-food .advantages-description,
+.advantages-item-souvenirs .advantages-description {
+  margin-bottom: 79px;
+}
+
+.advantages-item-area .advantages-description,
+.advantages-item-road .advantages-description,
+.advantages-item-tourists .advantages-description {
+  margin-bottom: 108px;
 }
 
 .advantages-title {
@@ -280,22 +359,28 @@ img {
 }
 
 .advantages-description {
+  display: block;
+  width: 220px;
   font-size: 18px;
   line-height: 21px;
   color: #333;
-  margin: 0;
+  margin: 0 auto;
 }
 
 .advantages-description-white {
   color:#FFF;
+  margin-bottom: 87px;
 }
 
+
 .advantages-number {
-  text-transform: uppercase;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 30px;
 }
 
 .advantages-item-image {
-  min-height: 384px;
+  max-height: 384px;
 }
 
 .interests {
@@ -303,10 +388,14 @@ img {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  max-height: 417px;
+  padding-top: 91px;
+  padding-bottom: 93px;
 }
 
 .interests-title {
   margin: 0;
+  margin-bottom: 29px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -316,10 +405,12 @@ img {
 .interests-description {
   display: block;
   margin: 0 auto;
+  margin-bottom: 56px;
   font-size: 22px;
   line-height: 26px;
   color: #333;
   width: 592px;
+  height: 52px;
 }
 
 .button-search {
@@ -333,6 +424,7 @@ img {
   background-color: #756257;
   text-decoration: none;
   width: 575px;
+  height: 60px;
 }
 
 .subscribe {
@@ -345,6 +437,8 @@ img {
   background-image: url("../images/background_subscribe.jpg");
   background-size: 100% 411px;
   background-repeat: no-repeat;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .subscribe-title {
@@ -355,16 +449,25 @@ img {
   line-height: 36px;
   text-transform: uppercase;
   color: #FFF;
+  padding-bottom: 29px;
 }
 
 .subscribe-description {
   display: block;
   margin: 0 auto;
   width: 720px;
+  height: 52px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
   color: #FFF;
+  padding-bottom: 46px;
+}
+
+.subscribe-form-block {
+  display: block;
+  width: 600px;
+  height: 60px;
 }
 
 .subscribe-form {
@@ -377,6 +480,11 @@ img {
   font-size: 18px;
   line-height: 26px;
   color: #000;
+}
+
+.subscribe-label-span {
+  display: block;
+  margin-right: -10px;
 }
 
 .button-subscribe {
@@ -400,9 +508,9 @@ img {
   background: #fff;
   display: flex;
   width: 100%;
-  padding: 0 32px;
-  padding-top: 42px;
-  padding-bottom: 44px;
+  padding: 0 72px;
+  padding-top: 40px;
+  padding-bottom: 30px;
   margin: 0 auto;
   justify-content: center;
   outline: 1px solid yellowgreen;
@@ -411,6 +519,8 @@ img {
 .footer-web {
   min-width: 107px;
   margin-right: 61px;
+  margin-top: 9px;
+  margin-bottom: 23px;
 }
 
 .footer-web-list {
@@ -443,6 +553,8 @@ img {
 .footer-logo {
   display: block;
   min-width: 115px;
+  margin-top: 4px;
+  margin-bottom: 14px;
 }
 
 .inner-header {
