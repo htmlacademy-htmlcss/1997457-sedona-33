@@ -475,7 +475,12 @@ img {
   width: 575px;
 }
 
+.subscribe-form-block {
+  margin: 0;
+}
+
 .subscribe-label {
+  position: relative;
   display: flex;
   justify-content: center;
   font-size: 18px;
@@ -484,8 +489,19 @@ img {
 }
 
 .subscribe-label-span {
+  position: absolute;
   display: block;
-  margin-right: -10px;
+  left: 22px;
+  right: 19px;
+  color: #000;
+  height: 60px;
+  text-align: start;
+}
+
+.subscribe-input {
+  width: 600px;
+  height: 60px;
+  background-color: #F2F2F2;
 }
 
 .button-subscribe {
@@ -495,6 +511,8 @@ img {
   text-transform: uppercase;
   color: #FFF;
   background-color: #83B3D3;
+  width: 200px;
+  height: 60px;
 }
 
 .footer-container {
