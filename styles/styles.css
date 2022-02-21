@@ -78,14 +78,12 @@ img {
 .header-container {
   margin: 0 auto;
   margin-bottom: 0;
-  max-width: 1280px;
-  padding: 0 40px;
   width: 100%;
   background: #E5E5E5;
 }
 
 .page-header-container {
-  padding: 0 20px;
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   outline: 1px solid greenyellow;
@@ -95,7 +93,7 @@ img {
 .navigation {
   outline: 1px dotted blue;
   display: flex;
-  width: 100%;
+  width: 1060px;
   height: 70px;
   margin: 0 auto;
   margin-bottom: 0;
@@ -188,16 +186,16 @@ img {
 }
 
 .main-container {
+  position: relative;
   flex-grow: 1;
   margin: 0 auto;
   margin-top: -5px;
-  max-width: 1280px;
-  padding: 0 40px;
   width: 100%;
   background: #E5E5E5;
 }
 
 .page-main-container {
+  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
   background-color: #fff;
@@ -220,11 +218,18 @@ img {
   outline: 1px solid red;
 }
 
-.beauty-sedona {
+.main-welcome::before {
+  position: absolute;
+  content: url("../images/welcome.svg");
+  top: 51px;
+  left: 371px;
+}
+
+/* .beauty-sedona {
   width: 458px;
   height: 352px;
   margin: 0 auto;
-}
+} */
 
 /* .welcome-divider::after { */
 .main-welcome::after{
@@ -525,14 +530,13 @@ img {
 }
 
 .footer-container {
-  max-width: 1280px;
   width: 100%;
-  padding: 0 40px;
   margin: 0 auto;
   background: #E5E5E5;
 }
 
 .page-footer-container {
+  max-width: 1200px;
   background: #fff;
   display: flex;
   width: 100%;
@@ -556,11 +560,7 @@ img {
   justify-content: flex-start;
 }
 
-.footer-item-twitter {
-  margin-right: 29px;
-}
-
-.footer-item-facebook {
+.footer-item:not(:last-child) {
   margin-right: 30px;
 }
 
@@ -583,10 +583,6 @@ img {
   min-width: 115px;
   margin-top: 4px;
   margin-bottom: 14px;
-}
-
-.inner-main {
-
 }
 
 .inner-header {
@@ -747,7 +743,7 @@ img {
   line-height: 23px;
 }
 
-.catalog-item:not(:last-child){
+.catalog-item:not(:last-child) {
   margin-bottom: 13px;
 }
 
