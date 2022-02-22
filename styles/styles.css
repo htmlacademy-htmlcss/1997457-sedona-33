@@ -42,7 +42,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  background-color: #FFF;
+  background-color: #E5E5E5;
   color: #000;
   margin: 0;
   outline: 1px solid rgba(255, 99, 78, 0.5);
@@ -51,7 +51,6 @@ body {
   min-height: 100%;
 }
 
-/* блоки */
 header {
   color:#000;
   background-color: #FFF;
@@ -75,19 +74,24 @@ img {
   clip: rect(0, 0, 0, 0);
 }
 
-.header-container {
-  margin: 0 auto;
-  margin-bottom: 0;
-  width: 100%;
-  background: #E5E5E5;
-}
-
-.page-header-container {
+.body-container {
+  background-color: #FFF;
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+}
+
+.header-container {
+  margin: 0 auto;
+  width: 100%;
+  background: inherit;
+}
+
+.page-header-container {
+  width: 100%;
+  margin: 0 auto;
   outline: 1px solid greenyellow;
-  background: #fff;
+  background: inherit;
 }
 
 .navigation {
@@ -173,9 +177,7 @@ img {
   display: block;
   width: 130px;
   height: 20px;
-  padding: 0 15px;
-  padding-top: 9px;
-  padding-bottom: 8px;
+  padding: 9px 15px;
   color:#FFF;
   background: #756257;
   text-transform: uppercase;
@@ -191,14 +193,13 @@ img {
   margin: 0 auto;
   margin-top: -5px;
   width: 100%;
-  background: #E5E5E5;
+  background: #FFF;
 }
 
 .page-main-container {
-  max-width: 1200px;
   width: 100%;
   margin: 0 auto;
-  background-color: #fff;
+  background-color: #FFF;
   outline: 1px solid red;
 }
 
@@ -225,13 +226,6 @@ img {
   left: 371px;
 }
 
-/* .beauty-sedona {
-  width: 458px;
-  height: 352px;
-  margin: 0 auto;
-} */
-
-/* .welcome-divider::after { */
 .main-welcome::after{
   position: absolute;
   content: url("../images/divider.svg");
@@ -434,8 +428,9 @@ img {
   color: #FFF;
   background-color: #756257;
   text-decoration: none;
-  width: 575px;
+  min-width: 575px;
   height: 60px;
+  padding-top: 15px;
 }
 
 .subscribe {
@@ -501,7 +496,7 @@ img {
 
 .subscribe-textbox {
   padding: 0;
-  width: 600px;
+  min-width: 600px;
   height: 60px;
 }
 
@@ -525,25 +520,23 @@ img {
   text-transform: uppercase;
   background-color: #83B3D3;
   color: #FFF;
-  width: 200px;
   height: 60px;
 }
 
 .footer-container {
   width: 100%;
   margin: 0 auto;
-  background: #E5E5E5;
+  background: inherit;
 }
 
 .page-footer-container {
-  max-width: 1200px;
-  background: #fff;
-  display: flex;
+  background: inherit;
   width: 100%;
+  margin: 0 auto;
+  display: flex;
   padding: 0 72px;
   padding-top: 40px;
   padding-bottom: 30px;
-  margin: 0 auto;
   justify-content: center;
   outline: 1px solid yellowgreen;
 }
@@ -610,29 +603,32 @@ img {
 }
 
 .breadscrumbs {
+  padding: 0;
+  margin: 0;
   position: relative;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
-  margin-left: 2px;
+  align-items: flex-starts;
   height: 21px;
+  margin-left: 2px;
   margin-bottom: 45px;
 }
 
 .breadscrumbs-item-home {
   position: relative;
   /* width: 28px; */
-  margin-right: 11px;
+  padding-top: 3px;
+  margin-right: 26px;
 }
-
-/* .breadscrumbs-item-home::after {
+/* Почему свг вставляется с отступами сверху и снизу, высота даже больше 24рх? Я поэтому и дела списком, потому что не мог убрать отступы. */
+ .breadscrumbs-item-home::after {
   position: absolute;
-  content: url("../images/catalog/arrow1.svg");
-  right: 0;
+  content: url("../images/catalog/arrow2.svg");
+  right: -15px;
   top: 0;
   z-index: 1;
   padding: 0;
-}*/
+}
 
 .breadscrums-home {
   display: block;
@@ -641,25 +637,11 @@ img {
   text-align: left;
 }
 
-.breadscrumbs-item-arrow {
-  position: relative;
-  top: 6px;
-  content: url("../images/catalog/arrow1.svg");
-  background-repeat: no-repeat;
-  background-size: 100% auto;
-  margin-right: 10px;
-
-}
-
-.breadscrums-text {
+.breadscrums-link {
   color:#FFF;
   font-size: 16px;
   line-height: 21px;
-
-}
-
-.catalog-options {
-
+  text-decoration: none;
 }
 
 .catalog-form {
@@ -698,8 +680,6 @@ img {
   width: 144px;
 
 }
-
-.catalog-checkbox {}
 
 .catalog-type {
   display: flex;
@@ -751,8 +731,6 @@ img {
   text-align: start;
 }
 
-.catalog-radio {}
-
 .catalog-legend-price {
   margin-bottom: 34px;
 }
@@ -789,7 +767,6 @@ img {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 160px;
   padding-top: 60px;
 }
 
@@ -799,7 +776,7 @@ img {
   line-height: 21px;
   text-transform: uppercase;
   background: #83B3D3;
-  width: 160px;
+  min-width: 160px;
   height: 48px;
   color: #FFF;
   margin-bottom: 20px;
@@ -808,10 +785,11 @@ img {
 .catalog-reset-button {
   font-weight: normal;
   line-height: 23px;
-  width: 160px;
+  min-width: 160px;
   height: 23px;
   background-color: transparent;
   color: #FFF;
+  border: none;
 }
 
 .section-hotels {
@@ -939,7 +917,7 @@ img {
 
 .product-card-more {
   display: block;
-  width: 133.01px;
+  min-width: 133px;
   height: 37px;
   background: #756257;
   font-weight: 700;
@@ -955,7 +933,7 @@ img {
 
 .product-card-save{
   display: block;
-  width: 140.94px;
+  min-width: 140px;
   height: 37px;
   background: #83B3D3;
   font-weight: 700;
@@ -993,7 +971,7 @@ img {
 }
 
 .button-more-div {
-  width: 1056px;
+  min-width: 1056px;
   margin: 0 auto;
   height: 120px;
   padding: 30px 218px;
@@ -1009,7 +987,7 @@ img {
   line-height: 26px;
   text-transform: uppercase;
   text-decoration: none;
-  width: 620px;
+  min-width: 620px;
   height: 60px;
   background: #83B3D3;
   color:#FFF;
@@ -1043,6 +1021,7 @@ img {
   width: 55px;
   height: 55px;
   text-align: center;
+  padding-top: 12px;
 }
 
 .pagination-item:not(:last-child) {
@@ -1056,9 +1035,7 @@ img {
 
 .pagination-ref {
   text-decoration: none;
-  position: absolute;
-  bottom: 16px;
-  left: 22px;
+  display: block;
 }
 
 .pagination-div {
@@ -1129,7 +1106,7 @@ img {
 
 .catalog-subscribe-textbox {
   padding: 0;
-  width: 600px;
+  min-width: 600px;
   height: 60px;
   background-color: #F2F2F2;
 }
