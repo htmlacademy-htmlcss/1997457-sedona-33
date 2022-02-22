@@ -614,20 +614,27 @@ img {
   margin-bottom: 45px;
 }
 
+.breadscrumbs-item {
+  position: relative;
+}
+
 .breadscrumbs-item-home {
   position: relative;
-  /* width: 28px; */
   padding-top: 3px;
   margin-right: 26px;
 }
 /* Почему свг вставляется с отступами сверху и снизу, высота даже больше 24рх? Я поэтому и дела списком, потому что не мог убрать отступы. */
- .breadscrumbs-item-home::after {
+ .breadscrumbs-item::after {
   position: absolute;
   content: url("../images/catalog/arrow2.svg");
   right: -15px;
   top: 0;
   z-index: 1;
   padding: 0;
+}
+
+.breadscrumbs-item:last-child::after {
+  content: none;
 }
 
 .breadscrums-home {
