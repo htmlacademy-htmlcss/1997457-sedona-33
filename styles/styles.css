@@ -79,6 +79,7 @@ img {
   max-width: 1200px;
   width: 100%;
   margin: 0 auto;
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
 }
 
 .header-container {
@@ -495,9 +496,16 @@ img {
 }
 
 .subscribe-textbox {
-  padding: 0;
+  padding: 0 22px;
   min-width: 600px;
   height: 60px;
+}
+
+.subscribe-textbox::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+  text-align: left;
 }
 
 .subscribe-label {
@@ -521,6 +529,7 @@ img {
   background-color: #83B3D3;
   color: #FFF;
   height: 60px;
+  border: none;
 }
 
 .footer-container {
@@ -608,7 +617,7 @@ img {
   position: relative;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-starts;
+  align-items: flex-start;
   height: 21px;
   margin-left: 2px;
   margin-bottom: 45px;
@@ -616,21 +625,26 @@ img {
 
 .breadscrumbs-item {
   position: relative;
+  display: flex;
+  align-items: center;
 }
 
 .breadscrumbs-item-home {
   position: relative;
-  padding-top: 3px;
-  margin-right: 26px;
+  margin-right: 16px;
 }
-/* Почему свг вставляется с отступами сверху и снизу, высота даже больше 24рх? Я поэтому и дела списком, потому что не мог убрать отступы. */
- .breadscrumbs-item::after {
-  position: absolute;
-  content: url("../images/catalog/arrow2.svg");
-  right: -15px;
-  top: 0;
+
+.breadscrumbs-item::after {
+  content: "";
+  display: block;
+  background-image: url("../images/catalog/arrow2.svg");
   z-index: 1;
   padding: 0;
+  background-repeat: no-repeat;
+  margin-left: 10px;
+  background-position: center;
+  height: 8px;
+  width: 5px;
 }
 
 .breadscrumbs-item:last-child::after {
@@ -775,6 +789,7 @@ img {
   flex-direction: column;
   align-items: center;
   padding-top: 60px;
+  border: none;
 }
 
 .catalog-options-button {
@@ -867,7 +882,6 @@ img {
   margin: 0;
   padding: 20px;
   width: 340px;
-  margin-right: 18px;
 }
 
 .product-card-link {
@@ -918,7 +932,7 @@ img {
 
 .product-card-button-div {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   margin-bottom: 16px;
 }
 
@@ -933,7 +947,6 @@ img {
   text-transform: uppercase;
   color:#FFF;
   text-decoration: none;
-  margin-right: 26px;
   text-align: center;
   padding-top: 9px;
 }
@@ -1112,10 +1125,17 @@ img {
 }
 
 .catalog-subscribe-textbox {
-  padding: 0;
+  padding: 0 22px;
   min-width: 600px;
   height: 60px;
   background-color: #F2F2F2;
+}
+
+.catalog-subscribe-textbox::placeholder {
+  font-size: 18px;
+  line-height: 26px;
+  color: #000;
+  text-align: left;
 }
 
 .catalog-subscribe-label {
@@ -1140,4 +1160,5 @@ img {
   width: 200px;
   height: 60px;
   background-color: #83B3D3;
+  border: none;
 }
