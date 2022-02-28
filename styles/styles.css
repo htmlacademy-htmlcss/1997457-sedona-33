@@ -872,6 +872,9 @@ img {
 
 .catalog-hotel-list {
   display: grid;
+  grid-template-columns: repeat(3, 340px);
+  column-gap: 18px;
+  row-gap: 10px;
   width: 100%;
   margin: 0 auto;
   margin-bottom: 34px;
