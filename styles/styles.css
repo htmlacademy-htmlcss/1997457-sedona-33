@@ -99,7 +99,6 @@ img {
   outline: 1px dotted blue;
   display: flex;
   width: 1060px;
-  height: 70px;
   margin: 0 auto;
   margin-bottom: 0;
   padding-left: 70px;
@@ -107,7 +106,6 @@ img {
 
 .header-logo {
   display: block;
-  /* position: relative; */
   z-index: 1;
   min-height: 66px;
   min-width: 139px;
@@ -117,13 +115,14 @@ img {
 }
 
 .navigation-list {
-  display: flex;
+  /* display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: center; */
+  display: grid;
+  grid-template-columns: ;
   margin: 0;
   padding: 0;
   width: 345px;
-  height: 66px;
 }
 
 .navigation-list-main {
