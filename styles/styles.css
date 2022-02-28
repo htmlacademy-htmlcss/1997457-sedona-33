@@ -115,11 +115,9 @@ img {
 }
 
 .navigation-list {
-  /* display: flex;
+  display: flex;
   justify-content: flex-start;
-  align-items: center; */
-  display: grid;
-  grid-template-columns: ;
+  align-items: center;
   margin: 0;
   padding: 0;
   width: 345px;
