@@ -99,7 +99,6 @@ img {
   outline: 1px dotted blue;
   display: flex;
   width: 1060px;
-  height: 70px;
   margin: 0 auto;
   margin-bottom: 0;
   padding-left: 70px;
@@ -107,7 +106,6 @@ img {
 
 .header-logo {
   display: block;
-  /* position: relative; */
   z-index: 1;
   min-height: 66px;
   min-width: 139px;
@@ -123,7 +121,6 @@ img {
   margin: 0;
   padding: 0;
   width: 345px;
-  height: 66px;
 }
 
 .navigation-list-main {
@@ -872,6 +869,9 @@ img {
 
 .catalog-hotel-list {
   display: grid;
+  grid-template-columns: repeat(3, 340px);
+  column-gap: 18px;
+  row-gap: 10px;
   width: 100%;
   margin: 0 auto;
   margin-bottom: 34px;
