@@ -167,7 +167,7 @@ img {
   left: 0;
   margin: auto;
 }
-
+/* svg избранное экспортируется с другими размерами, нежели в макете, почему?  */
 .navigation-icon.navigation-saves {
   position: absolute;
   top: 24px;
@@ -452,6 +452,7 @@ img {
   min-width: 575px;
   height: 60px;
   padding-top: 15px;
+  border-radius: 10px;
 }
 
 .subscribe {
@@ -519,6 +520,9 @@ img {
   padding: 0 22px;
   min-width: 600px;
   height: 60px;
+  background: #F2F2F2;
+  border: none;
+  border-radius: 10px 0 0 10px;
 }
 
 .subscribe-textbox::placeholder {
@@ -550,6 +554,7 @@ img {
   color: #FFF;
   height: 60px;
   border: none;
+  border-radius: 0 10px 10px 0;
 }
 
 .footer-container {
@@ -796,6 +801,14 @@ img {
   border-color: #FFF;
 }
 
+.catalog-range-textbox-min {
+  border-radius: 4px 0 0 4px;
+}
+
+.catalog-range-textbox-max {
+  border-radius: 0 4px 4px 0;
+}
+
 .catalog-range-text {
   position: absolute;
   z-index: 1;
@@ -823,6 +836,8 @@ img {
   height: 48px;
   color: #FFF;
   margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
 }
 
 .catalog-reset-button {
@@ -865,6 +880,8 @@ img {
   padding: 0;
   margin-right: 81px;
   height: 48px;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
 }
 
 .hotels-placing-list {
@@ -883,6 +900,22 @@ img {
   width: 48px;
   height: 48px;
   margin: 0;
+  background: #FFF;
+}
+
+.button-tile {
+  border: 2px solid #000000;
+  border-radius: 4px;
+}
+
+.button-slideshow {
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
+}
+
+.button-table {
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
 }
 
 .catalog-catalog {
@@ -974,6 +1007,7 @@ img {
   text-decoration: none;
   text-align: center;
   padding-top: 9px;
+  border-radius: 4px;
 }
 
 .product-card-save{
@@ -989,6 +1023,7 @@ img {
   text-decoration: none;
   text-align: center;
   padding-top: 9px;
+  border-radius: 4px;
 }
 
 .product-card-saved {
@@ -1013,6 +1048,7 @@ img {
   text-transform: uppercase;
   color: #333;
   text-align: center;
+  border-radius: 4px;
 }
 
 .button-more-div {
@@ -1037,6 +1073,7 @@ img {
   background: #83B3D3;
   color:#FFF;
   text-align: center;
+  border-radius: 4px;
 }
 
 .catalog-pagination {
@@ -1066,7 +1103,7 @@ img {
   width: 55px;
   height: 55px;
   text-align: center;
-  padding-top: 12px;
+  border-radius: 4px;
 }
 
 .pagination-item:not(:last-child) {
@@ -1081,6 +1118,16 @@ img {
 .pagination-ref {
   text-decoration: none;
   display: block;
+  position: relative;
+  top: calc(50% - 26px/2);
+}
+
+.pagination-number {
+  color: #fff;
+}
+
+.pagination-number-current {
+  color: #000;
 }
 
 .pagination-div {
@@ -1105,6 +1152,8 @@ img {
   color: #333333;
   width: 160px;
   height: 48px;
+  border: 2px solid #E6E6E6;
+  border-radius: 4px;
 }
 
 .catalog-subscribe{
@@ -1154,6 +1203,8 @@ img {
   min-width: 600px;
   height: 60px;
   background-color: #F2F2F2;
+  border: none;
+  border-radius: 10px 0 0 10px;
 }
 
 .catalog-subscribe-textbox::placeholder {
@@ -1186,4 +1237,5 @@ img {
   height: 60px;
   background-color: #83B3D3;
   border: none;
+  border-radius: 0 10px 10px 0;
 }
