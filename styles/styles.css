@@ -24,11 +24,11 @@ ul,ol {
   margin: 0;
   padding: 0;
   list-style: none;
-  outline: 1px dashed green;
+  /* outline: 1px dashed green; */
 }
 
 li {
-  outline: 1px dotted blue;
+  /* outline: 1px dotted blue; */
   margin: 0;
   padding: 0;
 }
@@ -45,7 +45,7 @@ body {
   background-color: #E5E5E5;
   color: #000;
   margin: 0;
-  outline: 1px solid rgba(255, 99, 78, 0.5);
+  /* outline: 1px solid rgba(255, 99, 78, 0.5); */
   display: flex;
   flex-direction: column;
   min-height: 100%;
@@ -91,17 +91,16 @@ img {
 .page-header-container {
   width: 100%;
   margin: 0 auto;
-  outline: 1px solid greenyellow;
+  /* outline: 1px solid greenyellow; */
   background: inherit;
 }
 
 .navigation {
-  outline: 1px dotted blue;
+  /* outline: 1px dotted blue; */
   display: flex;
   width: 1060px;
   margin: 0 auto;
   margin-bottom: 0;
-  padding-left: 70px;
 }
 
 .header-logo {
@@ -117,10 +116,11 @@ img {
 .navigation-list {
   display: flex;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
   margin: 0;
   padding: 0;
   width: 345px;
+  height: 66px;
 }
 
 .navigation-list-main {
@@ -168,7 +168,7 @@ img {
   margin: auto;
 }
 /* svg избранное экспортируется с другими размерами, нежели в макете, почему?  */
-.navigation-icon.navigation-saves {
+.navigation-icon.navigation-link-saves {
   position: absolute;
   top: 24px;
   right: 0;
@@ -176,14 +176,33 @@ img {
   margin: 0 auto;
 }
 
-.navigation-icon.navigation-saves-number {
-  position: absolute;
-  margin: 0;
-  left: 20px;
+.navigation-saves-round {
+  position: relative;
+  width: 19px;
+  height: 19px;
+  background: #7DB550;
+  border-radius: 50%;
   top: 15px;
+  left: 24px;
+}
+
+.navigation-saves-number {
+  position: absolute;
+  width: 19px;
+  height: 13px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 13px;
+  color: #FFF;
 }
 
 .navigation-item-button {
+  align-self: center;
   padding-left: 20px;
 }
 
@@ -204,6 +223,42 @@ img {
   border-radius: 4px;
 }
 
+.navigation-link:hover {
+  color: #756257;
+}
+
+.navigation-link .navigation-icon:hover {
+  fill: #756257;
+}
+
+.navigation-user .navigation-link-white:hover {
+  color:#FFF;
+  background-color: #615048;
+}
+
+.navigation-user .navigation-link-white:focus {
+  background: #615048;
+  border: 3px solid #83B3D3;
+  border-radius: 4px;
+}
+
+.navigation-link:active {
+  color: rgba(117, 98, 87, 0.3);
+}
+
+.navigation-user .navigation-icon:active {
+  opacity: 0.3;
+}
+/* не могу через псевдокласс не менять опасити у круга, все перепробовал что мог */
+.navigation-saves .navigation-link:not(.navigation-link>.navigation-saves-round):active{
+  opacity: 0.3;
+}
+
+.navigation-user .navigation-link-white:active {
+  color:#FFF;
+  background-color: #615048;
+}
+
 .main-index {
   text-align: center;
 }
@@ -221,7 +276,7 @@ img {
   width: 100%;
   margin: 0 auto;
   background-color: #FFF;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .inner-main-container {
@@ -237,7 +292,7 @@ img {
   background-size: 100% 485px;
   background-repeat: no-repeat;
   padding-top: 51.4px;
-  outline: 1px solid red;
+  /* outline: 1px solid red; */
 }
 
 .main-welcome::before {
