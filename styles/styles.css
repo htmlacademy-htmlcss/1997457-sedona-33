@@ -137,6 +137,26 @@ img {
   margin-right: 0;
 }
 
+.navigation-index-active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 68px;
+  height: 2px;
+  background-color: #756257;
+  z-index: 1;
+}
+
+.navigation-catalog-active::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 93px;
+  height: 2px;
+  background-color: #756257;
+  z-index: 1;
+}
+
 .navigation-about {
   margin-right: 0;
 }
@@ -223,40 +243,39 @@ img {
   border-radius: 4px;
 }
 
-.navigation-link:hover {
+.navigation-list-main .navigation-link:hover {
   color: #756257;
 }
 
-.navigation-link .navigation-icon:hover {
+.navigation-user .navigation-link:hover  .navigation-icon{
   fill: #756257;
 }
 
 .navigation-user .navigation-link-white:hover {
-  color:#FFF;
   background-color: #615048;
 }
 
-.navigation-user .navigation-link-white:focus {
+.navigation-user .navigation-link-white:focus-visible {
   background: #615048;
-  border: 3px solid #83B3D3;
-  border-radius: 4px;
+  box-shadow: inset 0 0 0 4px #83B3D3;
+  outline: none;
 }
 
-.navigation-link:active {
+.navigation-list-main .navigation-link:active {
   color: rgba(117, 98, 87, 0.3);
 }
 
-.navigation-user .navigation-icon:active {
+.navigation-user .navigation-link:active .navigation-icon {
   opacity: 0.3;
 }
-/* не могу через псевдокласс не менять опасити у круга, все перепробовал что мог */
-.navigation-saves .navigation-link:not(.navigation-link>.navigation-saves-round):active{
+
+.navigation-user .navigation-link:active .navigation-saves-number {
   opacity: 0.3;
 }
 
 .navigation-user .navigation-link-white:active {
-  color:#FFF;
   background-color: #615048;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .main-index {
@@ -506,8 +525,24 @@ img {
   text-decoration: none;
   min-width: 575px;
   height: 60px;
-  padding-top: 15px;
+  padding-top: 13px;
+  padding-bottom: 17px;
   border-radius: 10px;
+}
+
+.button-search:hover {
+  background: #615048;
+}
+
+.button-search:focus-visible {
+  background: #615048;
+  box-shadow: inset 0 0 0 3px #83B3D3;
+  outline: none;
+}
+
+.button-search:active>.button-search-text {
+  background: #615048;
+  opacity: 0.3;
 }
 
 .subscribe {
@@ -585,6 +620,7 @@ img {
   line-height: 26px;
   color: #000;
   text-align: left;
+  opacity: 0.6;
 }
 
 .subscribe-label {
