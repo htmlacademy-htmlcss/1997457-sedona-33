@@ -874,11 +874,13 @@ img {
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
+  border-radius: 4px;
 }
 
 .breadscrums-home {
   position: relative;
   width: 28px;
+  height: 100%;
 }
 
 .breadscrums-link-hostels {
@@ -894,6 +896,19 @@ img {
   left: 0;
   right: 0;
   margin: auto;
+}
+
+.breadscrums-link:hover {
+  opacity: 0.6;
+}
+
+.breadscrums-link:focus-visible {
+  box-shadow: inset 0 0 0 3px #83B3D3;
+  outline: none;
+}
+
+.breadscrums-link:active {
+  opacity: 0.3;
 }
 
 .catalog-form {
@@ -1210,6 +1225,20 @@ background: #68A2CA;
   border-radius: 4px;
 }
 
+.select-sorting:hover {
+  border-color: #83B3D3;
+}
+
+.select-sorting:focus-visible {
+  border-color: #E6E6E6;
+  outline: none;
+}
+
+.select-sorting:active {
+  border-color: #E6E6E6 ;
+  opacity: 0.3;
+}
+
 .hotels-placing-list {
   margin: 0;
   padding: 0;
@@ -1244,6 +1273,19 @@ background: #68A2CA;
   border-radius: 4px;
 }
 
+.placing-button:hover {
+  border-color: #83B3D3;
+}
+
+.placing-button:focus-visible {
+  border-color: #83B3D3;
+  outline: none;
+}
+
+.placing-button:active {
+  border-color: #000;
+}
+
 .catalog-catalog {
   max-width: 1056px;
   width: 100%;
@@ -1253,7 +1295,6 @@ background: #68A2CA;
 .catalog-hotel-list {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* column-gap: 18px; */
   row-gap: 10px;
   width: 100%;
   margin: 0 auto;
@@ -1270,12 +1311,25 @@ background: #68A2CA;
 .product-card-link {
   display: block;
   text-decoration: none;
+  margin-bottom: 16px;
+}
+
+.product-card-link:hover {
+  opacity: 0.6;
+}
+
+.product-card-link:focus-visible {
+  box-shadow: 0 0 0 3px #83B3D3;
+  outline: none;
 }
 
 .product-card-div {
-  min-width: 290px;
-  min-height: 220px;
-  margin-bottom: 16px;
+  min-width: 300px;
+  max-height: 206px;
+}
+
+.product-card-link:active {
+  opacity: 0.3;
 }
 
 .product-card-title {
@@ -1336,6 +1390,22 @@ background: #68A2CA;
   border-radius: 4px;
 }
 
+.product-card-more:hover {
+  background: #615048;
+}
+
+.product-card-more:focus-visible {
+  background: #615048;
+  box-shadow: 0 0 0 3px #83B3D3;
+  outline: none;
+}
+
+.product-card-more:active {
+  background: #615048;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 .product-card-save{
   display: block;
   min-width: 140px;
@@ -1352,8 +1422,39 @@ background: #68A2CA;
   border-radius: 4px;
 }
 
+.product-card-save:hover {
+  background: #68A2CA;
+}
+
+.product-card-save:focus-visible {
+  background: #68A2CA;
+  box-shadow: 0 0 0 3px #756257;
+  outline: none;
+}
+
+.product-card-save:active {
+  background: #68A2CA;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 .product-card-saved {
   background: #7DB54F;
+}
+
+.product-card-saved:hover {
+  background: #6C9E42;
+}
+
+.product-card-saved:focus-visible {
+  background: #6C9E42;
+  box-shadow: 0 0 0 3px #756257;
+  outline: none;
+}
+
+.product-card-saved:active {
+  background: #6C9E42;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .product-stars-div {
@@ -1425,27 +1526,41 @@ background: #68A2CA;
   line-height: 26px;
   text-transform: uppercase;
   color: #000;
-  background: #83B3D3;
-  width: 55px;
-  height: 55px;
-  text-align: center;
-  border-radius: 4px;
 }
 
 .pagination-item:not(:last-child) {
   margin-right: 8px;
 }
 
-.pagination-item-current {
+.pagination-ref {
+  display: block;
+  position: relative;
+  width: 55px;
+  height: 55px;
+  background: #83B3D3;
+  text-align: center;
+  border-radius: 4px;
+  text-decoration: none;
+  padding-top: calc(50% - 26px/2);
+}
+
+.pagination-ref-current {
   background: #F2F2F2;
   color:#000;
 }
 
-.pagination-ref {
-  text-decoration: none;
-  display: block;
-  position: relative;
-  top: calc(50% - 26px/2);
+.pagination-ref:hover {
+  background: #68A2CA;
+}
+
+.pagination-ref:focus-visible {
+  background: #68A2CA;
+  box-shadow: 0 0 0 3px #756257;
+  outline: none;
+}
+
+.pagination-ref:active .pagination-number {
+  color: rgba(255, 255, 255, 0.3) ;
 }
 
 .pagination-number {
