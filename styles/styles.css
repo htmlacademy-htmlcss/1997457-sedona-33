@@ -834,9 +834,9 @@ img {
   position: relative;
   display: flex;
   justify-content: flex-start;
-  align-items: flex-start;
-  height: 21px;
-  margin-left: 2px;
+  align-items: flex-center;
+  height: 27px;
+  margin-left: -6px;
   margin-bottom: 45px;
 }
 
@@ -848,7 +848,7 @@ img {
 
 .breadscrumbs-item-home {
   position: relative;
-  margin-right: 16px;
+  margin-right: 2px;
 }
 
 .breadscrumbs-item::after {
@@ -858,7 +858,7 @@ img {
   z-index: 1;
   padding: 0;
   background-repeat: no-repeat;
-  margin-left: 10px;
+  margin-left: 3px;
   background-position: center;
   height: 8px;
   width: 5px;
@@ -868,18 +868,32 @@ img {
   content: none;
 }
 
-.breadscrums-home {
-  display: block;
-  width: min-content;
-  height: min-content;
-  text-align: left;
-}
-
 .breadscrums-link {
+  display: block;
   color:#FFF;
   font-size: 16px;
   line-height: 21px;
   text-decoration: none;
+}
+
+.breadscrums-home {
+  position: relative;
+  width: 28px;
+}
+
+.breadscrums-link-hostels {
+  width: 89px;
+  height: 100%;
+  padding-top: 3px;
+}
+
+.breadscrums-home-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .catalog-form {
@@ -991,7 +1005,7 @@ img {
   text-align: left;
   font-size: 18px;
   line-height: 23px;
-  width: 143px;
+  width: 144px;
   height: 48px;
   background-color: transparent;
   color: #FFF;
@@ -1000,21 +1014,42 @@ img {
   border-image: auto;
 }
 
+.catalog-range-textbox:hover {
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
 .catalog-range-textbox-min {
   border-radius: 4px 0 0 4px;
+  padding-left: 17px;
+  margin-right: -1px;
 }
 
 .catalog-range-textbox-max {
   border-radius: 0 4px 4px 0;
+  padding-left: 19px;
+}
+/* вообще шляпа полная с этим фокусом, с рамкой и с тенью-_- */
+.catalog-range-textbox:focus-visible {
+  box-shadow: 0px 0px 0px 3px #81B3D2,
+  inset 0px 0px 0px 3px #81B3D2  ;
+  outline: none;
+  border-color: rgba(255, 255, 255, 1);
+}
+
+.catalog-range-textbox:active {
+  box-shadow: none;
+  border-color: rgba(255, 255, 255, 1);
+  background: #756257;
 }
 
 .catalog-range-text {
   position: absolute;
   z-index: 1;
-  right: 0;
+  right: 14px;
   top: 12px;
   font-size: 18px;
   line-height: 23px;
+  opacity: 0.3;
 }
 
 .catalog-range-scale {
@@ -1040,7 +1075,9 @@ img {
   border-color: #FFF;
   border-radius: 5px;
   cursor: pointer;
+  color: #fff;
 }
+
 
 .catalog-toggle-min {
   top: -8px;
@@ -1050,6 +1087,16 @@ img {
 .catalog-toggle-max {
   top: -8px;
   right: 0;
+}
+
+.catalog-range-toggle:focus-visible {
+  box-shadow: 0px 0px 0px 3px #83B3D3;
+  outline: none;
+}
+
+.catalog-range-toggle:active {
+  box-shadow: 0px 0px 0px 2px #83B3D3;
+  outline: none;
 }
 
 .catalog-options-button-div {
@@ -1074,14 +1121,59 @@ img {
   border-radius: 4px;
 }
 
+.catalog-options-button:hover {
+background: #68A2CA;
+}
+
+.catalog-options-button:focus-visible {
+  background: #68A2CA;
+  box-shadow: 0px 0px 0px 3px #fff;
+  outline: none;
+}
+
+.catalog-options-button:active {
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .catalog-reset-button {
+  position: relative;
   font-weight: normal;
+  font-size: 18px;
   line-height: 23px;
   min-width: 160px;
   height: 23px;
   background-color: transparent;
   color: #FFF;
   border: none;
+}
+
+.catalog-reset-button:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+ .catalog-reset-button::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  width: 100px;
+  height: 32px;
+  z-index: -1;
+  left: 31px;
+  top: -4px;
+  border: 3px solid #83B3D3;
+}
+
+.catalog-reset-button:focus-visible {
+  outline: none;
+}
+/* не работает, не включается в компиляцию */
+.catalog-reset-button:focus-visible .catalog-reset-button::before {
+  outline: none;
+  z-index: 1;
+}
+
+.catalog-reset-button:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .section-hotels {
