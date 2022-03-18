@@ -1290,10 +1290,15 @@ background: #68A2CA;
   margin: 0;
   padding: 0;
   padding-left: 19px;
+  padding-right: 34px;
   margin-right: 81px;
   height: 48px;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
+  background-image: url('../images/catalog/select_arrow.svg');
+  background-position: right 20px center;
+  background-repeat: no-repeat;
+  appearance: none;
 }
 
 .select-sorting:hover {
@@ -1710,6 +1715,10 @@ background: #68A2CA;
   height: 48px;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
+  background-image: url('../images/catalog/select_arrow.svg');
+  background-position: right 20px center;
+  background-repeat: no-repeat;
+  appearance: none;
 }
 
 .select-pagination:hover {
@@ -1847,5 +1856,365 @@ background: #68A2CA;
 }
 
 .catalog-button-subscribe:active .catalog-button-subscribe-text {
+  opacity: 0.3;
+}
+
+.modal-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: rgba(242, 242, 242, 0.8);
+  z-index: 2;
+}
+
+.modal {
+  position: relative;
+  font-family: "Pt Sans", "sans-serif", "Big Caslon";
+  margin: auto;
+  background-color: #fff;
+  border-radius: 30px;
+}
+
+.modal-auth {
+  width: 715px;
+  min-height: 560px;
+  padding-left: 75px;
+  padding-right: 65px;
+  padding-top: 62px;
+}
+
+.modal-name {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: uppercase;
+  margin: 0;
+  min-width: 500px;
+  height: 67px;
+  margin-left: -2px;
+}
+
+.modal-close-button {
+  position: absolute;
+  padding: 0;
+  top: 55px;
+  right: 65px;
+  width: 53px;
+  height: 53px;
+  background-color: #F2F2F2;
+  border: none;
+  border-radius: 50%;
+  background-image: url('data:image/svg+xml,%3Csvg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" fill="%23000"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.modal-close-button:hover {
+  background-color: #E6E6E6;
+  background-image: url('data:image/svg+xml,%3Csvg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" fill="%23000"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-close-button:focus-visible {
+  box-shadow: 0 0 0 3px #83B3D3;
+  outline: none;
+}
+
+.modal-close-button:active {
+  background-color: #E6E6E6;
+  background-image: url('data:image/svg+xml,%3Csvg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M13 1.2 11.8 0 6.5 5.3 1.2 0 0 1.2l5.3 5.3L0 11.8 1.2 13l5.3-5.3 5.3 5.3 1.2-1.2-5.3-5.3L13 1.2Z" fill="%23000" opacity=".3"/%3E%3C/svg%3E%0A');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.modal-structure {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-structure:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.modal-input-date {
+  position: relative;
+  font-family: "Pt Sans", "sans-serif", "Big Caslon";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  border: none;
+  background: #F2F2F2;
+  border-radius: 4px;
+  color: #000;
+}
+
+.modal-input-date::placeholder {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 19px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  opacity: 0.6;
+  color: #000;
+}
+
+.modal-label {
+  min-height: 50px;
+}
+
+.modal-input-date {
+  height: 50px;
+  min-width: 420px;
+  padding-left: 19px;
+  padding-right: 200px;
+}
+
+.modal-label-text {
+  font-family: "Pt Sans", "sans-serif", "Big Caslon";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+}
+
+.modal-old-number {
+  display: flex;
+  justify-content: space-between;
+  min-width: 288px;
+}
+
+.modal-young-number {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.modal-label-young {
+  width: 54px;
+}
+
+.modal-attention-wrapper {
+  position: relative;
+  margin-right: 11px;
+}
+
+.modal-young-number-attention {
+  display: block;
+  width: 25px;
+  height: 25px;
+  border: none;
+  border-radius: 50%;
+  background: #83B3D3;
+  background-image: url('data:image/svg+xml,%3Csvg width="1" height="9" viewBox="0 0 1 9" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cg clip-path="url(%23a)" fill="%23fff"%3E%3Cpath d="M0 9h1V3H0v6ZM1 0H0v1h1V0Z"/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id="a"%3E%3Cpath fill="%23fff" d="M0 0h1v9H0z"/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.modal-young-number-attention:hover + .modal-attention-text {
+  opacity: 1;
+}
+
+.modal-attention-text {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -158px;
+  display: block;
+  width: 256px;
+  height: 143px;
+  padding: 15px 18px 18px 22px;
+  background: #333333;
+  border: none;
+  border-radius: 10px;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  z-index: 2;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.modal-attention-text::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 9.5px 9px 9.5px;
+  border-color: transparent transparent #333333 transparent;
+}
+
+.modal-input-wrapper {
+  position: relative;
+}
+
+.modal-input-minus {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  top: 0;
+  bottom: 0;
+  left: 19px;
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.modal-input-minus::before {
+  content: "";
+  width: 13px;
+  height: 1px;
+  background-color: #000;
+  opacity: 0.3;
+}
+
+.modal-input-minus:hover::before {
+  opacity: 1;
+}
+
+.modal-input-minus:focus-visible {
+  box-shadow: inset 0 0 0 3px #83B3D3 ;
+  outline: none;
+}
+
+.modal-input-minus:focus-visible::before {
+  opacity: 1;
+}
+
+.modal-input-minus:active::before {
+  opacity: 0.2;
+}
+
+.modal-input-plus {
+  position: absolute;
+  height: 25px;
+  width: 25px;
+  top: 0;
+  bottom: 0;
+  right: 19px;
+  margin: auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  border: none;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.modal-input-plus::before {
+  content: "";
+  width: 13px;
+  height: 1px;
+  background-color: #000;
+  opacity: 0.3;
+}
+
+.modal-input-plus::after {
+  content: "";
+  position: absolute;
+  width: 13px;
+  height: 1px;
+  background-color: #000;
+  opacity: 0.3;
+  transform: rotate(90deg);
+}
+
+.modal-input-plus:hover::before {
+  opacity: 1;
+}
+
+.modal-input-plus:hover::after {
+  opacity: 1;
+}
+
+.modal-input-plus:focus-visible {
+  box-shadow: inset 0 0 0 3px #83B3D3 ;
+  outline: none;
+}
+
+.modal-input-plus:focus-visible::before {
+  opacity: 1;
+}
+
+.modal-input-plus:focus-visible::after {
+  opacity: 1;
+}
+
+.modal-input-plus:active::before {
+  opacity: 0.2;
+}
+
+.modal-input-plus:active::after {
+  opacity: 0.2;
+}
+
+.modal-input-amount {
+  min-height: 50px;
+  width: 133px;
+  border: none;
+  border-radius: 4px;
+  background-color: #F2F2F2;
+}
+
+.modal-button-search {
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+  color: #FFF;
+  background-color: #83B3D3;
+  text-decoration: none;
+  min-width: 575px;
+  height: 60px;
+  padding-top: 13px;
+  padding-bottom: 17px;
+  border-radius: 10px;
+  border: none;
+}
+
+.modal-button-search:hover {
+  background: #68A2CA;;
+}
+
+.modal-button-search:focus-visible {
+  background: #68A2CA;
+  box-shadow:  0 0 0 3px #756257;
+  outline: none;
+}
+
+.modal-button-search:active>.modal-button-search-text {
+  background: #68A2CA;
   opacity: 0.3;
 }

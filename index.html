@@ -221,5 +221,60 @@
         </div>
       </footer>
     </div>
+    <div class="modal-container">
+      <div class="modal modal-auth">
+        <h1 class="modal-name">
+          Поиск гостиницы в Седоне
+        </h1>
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="modal-structure">
+            <label class="modal-label modal-label-text" for="modal-income">
+              Дата заезда:
+            </label>
+            <input class="modal-input-date" id="modal-input" type="date" name="date-income" placeholder="Укажите дату" required>
+          </div>
+          <div class="modal-structure">
+            <label class="modal-label modal-label-text" for="modal-outcome">
+              Дата выезда:
+            </label>
+            <input class="modal-input-date" id="modal-outcome" type="date" name="date-income" placeholder="Укажите дату" required>
+          </div>
+          <div class="modal-structure modal-numbers">
+            <div class="modal-old-number">
+              <label class="modal-label-text modal-label-old" for="modal-old">
+                Взрослые:
+              </label>
+              <div class="modal-input-wrapper">
+                <button class="modal-input-minus"></button>
+                <input class="modal-input-amount" id="modal-old" type="number" name="old-number" min="0" value="" >
+                <button class="modal-input-plus"></button>
+              </div>
+            </div>
+            <div class="modal-young-number">
+              <label class="modal-label-text modal-label-young" for="modal-young">
+                Дети:
+              </label>
+              <div class="modal-attention-wrapper">
+                <span class="modal-young-number-attention"></span>
+                <span class="modal-attention-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+              </div>
+              <div class="modal-input-wrapper">
+                <button class="modal-input-minus"></button>
+                <input class="modal-input-amount" id="modal-young" type="number" name="young-number" min="0" value="" >
+                <button class="modal-input-plus"></button>
+              </div>
+            </div>
+          </div>
+          <button class="modal-button-search" type="submit">
+            <span class="modal-button-search-text">
+              Найти
+            </span>
+          </button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
