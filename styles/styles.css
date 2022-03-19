@@ -1940,6 +1940,7 @@ background: #68A2CA;
 }
 
 .modal-structure {
+  position: relative;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1947,6 +1948,10 @@ background: #68A2CA;
 
 .modal-structure:not(:last-child) {
   margin-bottom: 40px;
+}
+
+.modal-label {
+  min-height: 50px;
 }
 
 .modal-input-date {
@@ -1960,11 +1965,15 @@ background: #68A2CA;
   background: #F2F2F2;
   border-radius: 4px;
   color: #000;
+  height: 50px;
+  min-width: 420px;
+  padding-left: 19px;
+  padding-right: 200px;
 }
 
 .modal-input-date::placeholder {
   position: absolute;
-  top: 0;
+  top: 5px;
   bottom: 0;
   left: 19px;
   font-family: 'PT Sans';
@@ -1976,15 +1985,88 @@ background: #68A2CA;
   color: #000;
 }
 
-.modal-label {
-  min-height: 50px;
+.modal-button-date-income {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  top: 18px;
+  right: 19px;
+  cursor: pointer;
+  background-image: url('data:image/svg+xml,%3Csvg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cg opacity=".3" fill="%23000"%3E%3Cpath d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z"/%3E%3Cpath d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"/%3E%3Cpath d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/%3E%3C/g%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
 }
 
-.modal-input-date {
-  height: 50px;
-  min-width: 420px;
-  padding-left: 19px;
-  padding-right: 200px;
+.modal-button-date-outcome {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  top: 18px;
+  right: 19px;
+  cursor: pointer;
+  background-image: url('data:image/svg+xml,%3Csvg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cg opacity=".3" fill="%23000"%3E%3Cpath d="M5.5 10c.3 0 .5-.2.5-.5S5.8 9 5.5 9s-.5.2-.5.5.2.5.5.5Z"/%3E%3Cpath d="M14 2h-2V0h-1v2H4V0H3v2H1c-.6 0-1 .4-1 1v11c0 .5.4 1 1 1h13c.5 0 1-.5 1-1V3c0-.6-.5-1-1-1Zm0 12H1V7h13v7ZM1 6V3h2v2h1V3h7v2h1V3h2v3H1Z"/%3E%3Cpath d="M7.5 10c.3 0 .5-.2.5-.5S7.8 9 7.5 9s-.5.2-.5.5.2.5.5.5ZM9.5 10c.3 0 .5-.2.5-.5S9.8 9 9.5 9s-.5.2-.5.5.2.5.5.5ZM5.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM3.5 10c.3 0 .5-.2.5-.5S3.8 9 3.5 9s-.5.2-.5.5.2.5.5.5ZM3.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM7.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM9.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5ZM11.5 10c.3 0 .5-.2.5-.5s-.2-.5-.5-.5-.5.2-.5.5.2.5.5.5ZM11.5 11c-.3 0-.5.2-.5.5s.2.5.5.5.5-.2.5-.5-.2-.5-.5-.5Z"/%3E%3C/g%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  background-color: transparent;
+}
+
+.modal-input-error {
+  position: absolute;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #FF5757;
+  left: 145px;
+  bottom: -29px;
+  width: 420px;
+  height: 29px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.modal-input-enabled {
+  position: absolute;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 40px;
+  color: #000;
+  left: 145px;
+  bottom: -29px;
+  width: 420px;
+  height: 29px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.modal-input-date:hover {
+  background: #E6E6E6;
+}
+
+.modal-input-date:focus-visible {
+  background: #E6E6E6;
+  box-shadow: 0 0 0 3px #83B3D3;
+  outline: none;
+}
+
+.modal-input-date:active {
+  background: #fff;
+  box-shadow: inset 0 0 0 2px #000;
+  outline: none;
+}
+
+.modal-input-date::grammar-error + .modal-button-date + .modal-input-error{
+  opacity: 1;
+}
+
+.modal-input-date:enabled + .modal-button-date + .modal-input-error + .modal-input-enabled{
+  opacity: 1;
 }
 
 .modal-label-text {
@@ -2185,6 +2267,12 @@ background: #68A2CA;
   border: none;
   border-radius: 4px;
   background-color: #F2F2F2;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 40px;
+  text-align: center;
 }
 
 .modal-button-search {

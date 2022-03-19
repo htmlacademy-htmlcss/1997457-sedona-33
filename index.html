@@ -221,7 +221,7 @@
         </div>
       </footer>
     </div>
-    <div class="modal-container">
+    <div class="modal-container visually-hidden">
       <div class="modal modal-auth">
         <h1 class="modal-name">
           Поиск гостиницы в Седоне
@@ -234,13 +234,19 @@
             <label class="modal-label modal-label-text" for="modal-income">
               Дата заезда:
             </label>
-            <input class="modal-input-date" id="modal-input" type="date" name="date-income" placeholder="Укажите дату" required>
+            <input class="modal-input-date" id="modal-input" type="text" name="date-income" placeholder="Укажите дату" required>
+            <button class="modal-button-date modal-button-date-income"></button>
+            <span class="modal-input-error">Мы не можем отправить вас в прошлое.</span>
+            <span class="modal-input-enabled">На эти даты есть свободные номера. Пока есть.</span>
           </div>
           <div class="modal-structure">
             <label class="modal-label modal-label-text" for="modal-outcome">
               Дата выезда:
             </label>
-            <input class="modal-input-date" id="modal-outcome" type="date" name="date-income" placeholder="Укажите дату" required>
+            <input class="modal-input-date" id="modal-outcome" type="text" name="date-income" placeholder="Укажите дату" required>
+            <button class="modal-button-date modal-button-date-outcome"></button>
+            <span class="modal-input-error">Мы не можем отправить вас в прошлое.</span>
+            <span class="modal-input-enabled">На эти даты есть свободные номера. Пока есть.</span>
           </div>
           <div class="modal-structure modal-numbers">
             <div class="modal-old-number">
