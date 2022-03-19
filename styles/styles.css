@@ -42,7 +42,7 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  background-color: #E5E5E5;
+  background-color: #F2F2F2;
   color: #000;
   margin: 0;
   /* outline: 1px solid rgba(255, 99, 78, 0.5); */
@@ -130,6 +130,7 @@ img {
 .navigation-user{
   width: 264px;
   height: 66px;
+  padding-bottom: 1px;
 }
 
 .navigation-link-active {
@@ -232,7 +233,7 @@ img {
   display: block;
   min-width: 130px;
   min-height: 20px;
-  padding: 9px 15px;
+  padding: 8.5px 15px;
   color:#FFF;
   background: #756257;
   font-style: normal;
@@ -399,7 +400,7 @@ img {
 
 .advantages-block{
   width: 400px;
-  max-height: 384px;
+  min-height: 384px;
 }
 
 .advantages-item-home,
@@ -409,22 +410,35 @@ img {
   background-color: rgba(131, 179, 211, 0.12);
 }
 
-.advantages-item-home,
-.advantages-item-food,
+.advantages-item-home {
+  padding-top: 89px;
+}
+
+.advantages-item-food {
+  padding-top: 91px;
+}
+
 .advantages-item-souvenirs {
   padding-top: 85px;
 }
 
-.advantages-block-div {
+.advantages-image-home {
+  height: 75px;
+  margin-bottom: 23px;
+}
+
+.advantages-image-food {
+  height: 75px;
+  margin-bottom: 19px;
+}
+
+.advantages-image-souvenirs {
+  height: 76px;
   margin-bottom: 23px;
 }
 
 .advantages-item-road {
   background-color: rgba(131, 179, 211, 0.2);
-}
-
-.advantages-image-food {
-  padding-top: 6px;
 }
 
 .advantages-item-home .title-bold,
@@ -461,7 +475,7 @@ img {
 
 .advantages-description {
   display: block;
-  width: 220px;
+  width: 250px;
   font-size: 18px;
   line-height: 21px;
   color: #333;
@@ -471,6 +485,7 @@ img {
 .advantages-description-white {
   color:#FFF;
   margin-bottom: 87px;
+  width: 220px;
 }
 
 
@@ -506,11 +521,23 @@ img {
 .interests-description {
   display: block;
   margin: 0 auto;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333;
+  width: 720px;
+  height: 52px;
+}
+
+.interests-description-continue {
+  display: block;
+  margin: 0;
+  margin-right: 220px;
+  margin-left: 205px;
   margin-bottom: 56px;
   font-size: 22px;
   line-height: 26px;
   color: #333;
-  width: 592px;
+  width: 720px;
   height: 52px;
 }
 
@@ -580,7 +607,7 @@ img {
   line-height: 26px;
   text-align: center;
   color: #FFF;
-  padding-bottom: 46px;
+  margin-bottom: 46px;
 }
 
 .subscribe-form-block {
@@ -663,16 +690,20 @@ img {
 .button-subscribe {
   display: block;
   min-width: 200px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 26px;
-  text-align: center;
-  text-transform: uppercase;
+  padding-top: 4px;
   background-color: #83B3D3;
   color: #FFF;
   height: 60px;
   border: none;
   border-radius: 0 10px 10px 0;
+}
+
+.button-subscribe-text {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .button-subscribe:hover {
@@ -704,19 +735,21 @@ img {
   padding: 0 72px;
   padding-top: 10px;
   padding-bottom: 10px;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   outline: 1px solid yellowgreen;
 }
 
 .footer-web {
   min-width: 107px;
+  margin-left: -10px;
   margin-right: auto;
   margin-top: 9px;
   margin-bottom: 23px;
 }
 
 .footer-web-list {
+  margin-top: 18px;
   display: flex;
   justify-content: flex-start;
 }
@@ -760,6 +793,8 @@ img {
   display: block;
   min-width: 360px;
   height: 70px;
+  margin-top: 14px;
+  margin-left: 44px;
   margin-right: auto;
   text-align: center;
   font-size: 40px;
@@ -782,6 +817,7 @@ img {
 }
 
 .footer-logo {
+  align-self: center;
   display: block;
   position: relative;
   min-width: 160px;
@@ -793,8 +829,7 @@ img {
 
 .footer-logo-icon {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 4px;
   right: 0;
   bottom: 0;
   margin: auto;
@@ -1870,9 +1905,9 @@ background: #68A2CA;
   display: none;
 }
 
-.modal-container-active {
+/* .modal-container-active {
   display: flex;
-}
+} */
 
 .modal {
   position: relative;
