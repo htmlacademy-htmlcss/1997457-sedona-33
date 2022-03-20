@@ -240,19 +240,25 @@
             <label class="modal-label modal-label-text" for="modal-income">
               Дата заезда:
             </label>
-            <input class="modal-input-date" id="modal-income" type="text" name="date-income" value="27 апреля 2020" placeholder="Укажите дату" required>
-            <button class="modal-button-date modal-button-date-income"></button>
-            <span class="modal-input-error">Мы не можем отправить вас в прошлое.</span>
-            <span class="modal-input-enabled">На эти даты есть свободные номера. Пока есть.</span>
+            <div class="modal-valid-wrapper modal-invalid-wrapper">
+              <div class="modal-input-wrapper">
+                <input class="modal-input-date" id="modal-income" type="text" name="date-income" value="27 апреля 2020" placeholder="Укажите дату" required>
+                <button class="modal-button-date modal-button-date-income"></button>
+              </div>
+              <span class="modal-input-error">Мы не можем отправить вас в прошлое.</span>
+            </div>
           </div>
           <div class="modal-structure">
             <label class="modal-label modal-label-text modal-label-outcome" for="modal-outcome">
               Дата выезда:
             </label>
-            <input class="modal-input-date" id="modal-outcome" type="text" name="date-income" value="1 сентября 2021" placeholder="Укажите дату" required>
-            <button class="modal-button-date modal-button-date-outcome"></button>
-            <span class="modal-input-error">Мы не можем отправить вас в прошлое.</span>
-            <span class="modal-input-enabled">На эти даты есть свободные номера. Пока есть.</span>
+            <div class="modal-valid-wrapper modal-invalid-wrapper">
+              <div class="modal-input-wrapper">
+                <input class="modal-input-date" id="modal-outcome" type="text" name="date-income" value="1 сентября 2021" placeholder="Укажите дату" required>
+                <button class="modal-button-date modal-button-date-outcome"></button>
+              </div>
+              <span class="modal-input-enable">На эти даты есть свободные номера. Пока есть.</span>
+            </div>
           </div>
           <div class="modal-structure modal-numbers">
             <div class="modal-old-number">

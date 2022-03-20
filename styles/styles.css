@@ -2008,6 +2008,10 @@ img {
   width: 575px;
 }
 
+.modal-valid-wrapper {
+  align-self: flex-start;
+}
+
 .modal-structure:not(:last-child) {
   margin-bottom: 35px;
 }
@@ -2015,6 +2019,10 @@ img {
 .modal-label {
   min-height: 50px;
   margin-top: 5px;
+}
+
+.modal-input-wrapper {
+  position: relative;
 }
 
 .modal-input-date {
@@ -2089,11 +2097,10 @@ img {
   bottom: -18px;
   width: 420px;
   height: 29px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  display: none;
 }
 
-.modal-input-enabled {
+.modal-input-enable {
   position: absolute;
   font-family: "PT Sans";
   font-style: normal;
@@ -2105,11 +2112,10 @@ img {
   bottom: -18px;
   width: 420px;
   height: 29px;
-  opacity: 0;
-  transition: opacity 0.3s ease-in-out;
+  display: none;
 }
 
-.modal-input-date:hover {
+.modal-input-wrapper:hover .modal-input-date {
   background: #e6e6e6;
 }
 
@@ -2123,23 +2129,14 @@ img {
   color: transparent;
 }
 
-.modal-input-date:active {
+.modal-input-wrapper:active .modal-input-date {
   background: #fff;
   box-shadow: inset 0 0 0 2px #000;
   outline: none;
 }
 
-.modal-input-date::grammar-error
-  + .modal-button-date
-  + .modal-input-error {
-  opacity: 1;
-}
-
-.modal-input-date:enabled
-  + .modal-button-date
-  + .modal-input-error
-  + .modal-input-enabled {
-  opacity: 1;
+.modal-valid-wrapper span {
+  display: block;
 }
 
 .modal-label-text {
@@ -2194,7 +2191,7 @@ img {
 }
 
 .modal-young-number-attention:hover + .modal-attention-text {
-  opacity: 1;
+  display: block;
 }
 
 .modal-attention-text {
@@ -2216,7 +2213,7 @@ img {
   line-height: 20px;
   color: #fff;
   z-index: 2;
-  opacity: 0;
+  display: none;
   transition: opacity 0.3s ease-in-out;
 }
 
@@ -2231,7 +2228,7 @@ img {
   height: 0;
   border-style: solid;
   border-width: 0 9.5px 9px 9.5px;
-  border-color: transparent transparent #333333 transparent;
+  border-color: transparent transparent #333 transparent;
 }
 
 .modal-input-wrapper {
