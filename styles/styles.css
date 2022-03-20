@@ -1925,9 +1925,9 @@ img {
   display: none;
 }
 
-/* .modal-container-active {
+.modal-container-active {
   display: flex;
-} */
+}
 
 .modal {
   position: relative;
@@ -2129,7 +2129,9 @@ img {
   outline: none;
 }
 
-.modal-input-date::grammar-error + .modal-button-date + .modal-input-error {
+.modal-input-date::grammar-error
+  + .modal-button-date
+  + .modal-input-error {
   opacity: 1;
 }
 
