@@ -84,21 +84,21 @@
                       <li class="catalog-item">
                         <label class="catalog-label">
                           <input class="catalog-checkbox" type="checkbox" name="pool" checked>
-                          <div class="check-box"></div>
+                          <span class="check-box"></span>
                           Бассейн
                         </label>
                       </li>
                       <li class="catalog-item">
                         <label class="catalog-label">
                           <input class="catalog-checkbox" type="checkbox" name="parking" checked>
-                          <div class="check-box"></div>
+                          <span class="check-box"></span>
                           Парковка
                         </label>
                       </li>
                       <li class="catalog-item">
                         <label class="catalog-label">
                           <input class="catalog-checkbox" type="checkbox" name="wifi">
-                          <div class="check-box"></div>
+                          <span class="check-box"></span>
                           Wi-Fi
                         </label>
                       </li>
@@ -112,21 +112,21 @@
                       <li class="catalog-item">
                         <label class="catalog-label">
                           <input class="catalog-radio" type="radio" name="filter-place" value="hotel" checked>
-                          <div class="radio-box"></div>
+                          <span class="radio-box"></span>
                           Гостиница
                         </label>
                       </li>
                       <li class="catalog-item">
                         <label class="catalog-label">
                           <input class="catalog-radio" type="radio" name="filter-place" value="hostel">
-                          <div class="radio-box"></div>
+                          <span class="radio-box"></span>
                           Мотель
                         </label>
                       </li>
                       <li class="catalog-item">
                         <label class="catalog-label">
                           <input class="catalog-radio" type="radio" name="filter-place" value="apartments">
-                          <div class="radio-box"></div>
+                          <span class="radio-box"></span>
                           Апартаменты
                         </label>
                       </li>
@@ -135,29 +135,27 @@
                 </div>
                 <div class="catalog-second-form-div">
                   <fieldset class="catalog-filter-group">
-                    <div class="catalog-legend-div">
-                      <legend class="catalog-legend catalog-legend-price">
-                        Стоимость, ₽:
-                      </legend>
-                      <ul class="catalog-legend-list">
-                        <li class="catalog-legend-item">
-                          <input class="catalog-range-textbox catalog-range-textbox-min" id="catalog-range-min" type="number" name="min" value="0" min="0" max="8999">
-                          <label class="catalog-range-text" for="catalog-range-min">от</label>
-                      </li>
+                    <legend class="catalog-legend catalog-legend-price">
+                      Стоимость, ₽:
+                    </legend>
+                    <ul class="catalog-legend-list">
                       <li class="catalog-legend-item">
-                          <input class="catalog-range-textbox catalog-range-textbox-max" id="catalog-range-max" type="number" name="max" value="9000" min="1" max="9000">
-                          <label class="catalog-range-text catalog-range-text-after" for="catalog-range-max">до</label>
-                        </li>
-                      </ul>
-                      <div class="catalog-range-scale">
-                        <div class="catalog-range-bar">
-                          <a class="catalog-range-toggle catalog-toggle-min" href="">
-                            <span class="visually-hidden">Изменить минимальную цену.</span>
-                          </a>
-                          <a class="catalog-range-toggle catalog-toggle-max" href="">
-                            <span class="visually-hidden">Изменить максимальную цену.</span>
-                          </a>
-                        </div>
+                        <input class="catalog-range-textbox catalog-range-textbox-min" id="catalog-range-min" type="number" name="min" value="0" min="0" max="8999">
+                        <label class="catalog-range-text" for="catalog-range-min">от</label>
+                    </li>
+                    <li class="catalog-legend-item">
+                        <input class="catalog-range-textbox catalog-range-textbox-max" id="catalog-range-max" type="number" name="max" value="9000" min="1" max="9000">
+                        <label class="catalog-range-text catalog-range-text-after" for="catalog-range-max">до</label>
+                      </li>
+                    </ul>
+                    <div class="catalog-range-scale">
+                      <div class="catalog-range-bar">
+                        <a class="catalog-range-toggle catalog-toggle-min" href="">
+                          <span class="visually-hidden">Изменить минимальную цену.</span>
+                        </a>
+                        <a class="catalog-range-toggle catalog-toggle-max" href="">
+                          <span class="visually-hidden">Изменить максимальную цену.</span>
+                        </a>
                       </div>
                     </div>
                   </fieldset>
