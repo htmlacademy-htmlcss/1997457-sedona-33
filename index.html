@@ -224,7 +224,7 @@
         </div>
       </footer>
     </div>
-    <div class="modal-container modal-container-active ">
+    <div class="modal-container modal-container-active">
       <div class="modal modal-auth">
         <h1 class="modal-name">
           Поиск гостиницы в Седоне
@@ -233,7 +233,7 @@
           <span class="visually-hidden">Закрыть</span>
         </button>
         <form class="modal-form" action="https://echo.htmlacademy.ru/" method="get">
-          <div class="modal-structure">
+          <div class="modal-structure modal-structure-income">
             <label class="modal-label modal-label-text" for="modal-income">
               Дата заезда:
             </label>
@@ -243,7 +243,7 @@
             <span class="modal-input-enabled">На эти даты есть свободные номера. Пока есть.</span>
           </div>
           <div class="modal-structure">
-            <label class="modal-label modal-label-text" for="modal-outcome">
+            <label class="modal-label modal-label-text modal-label-outcome" for="modal-outcome">
               Дата выезда:
             </label>
             <input class="modal-input-date" id="modal-outcome" type="text" name="date-income" value="1 сентября 2021" placeholder="Укажите дату" required>
@@ -258,7 +258,7 @@
               </label>
               <div class="modal-input-wrapper">
                 <button class="modal-input-minus"></button>
-                <input class="modal-input-amount" id="modal-old" type="number" name="old-number" min="0" value="" >
+                <input class="modal-input-amount" id="modal-old" type="number" name="old-number" min="0" value="2" >
                 <button class="modal-input-plus"></button>
               </div>
             </div>
@@ -272,7 +272,7 @@
               </div>
               <div class="modal-input-wrapper">
                 <button class="modal-input-minus"></button>
-                <input class="modal-input-amount" id="modal-young" type="number" name="young-number" min="0" value="" >
+                <input class="modal-input-amount" id="modal-young" type="number" name="young-number" min="0" value="1" >
                 <button class="modal-input-plus"></button>
               </div>
             </div>

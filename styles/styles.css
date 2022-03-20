@@ -1924,9 +1924,9 @@ background: #68A2CA;
   display: none;
 }
 
-/* .modal-container-active {
+.modal-container-active {
   display: flex;
-} */
+}
 
 .modal {
   position: relative;
@@ -1939,9 +1939,9 @@ background: #68A2CA;
 .modal-auth {
   width: 715px;
   min-height: 560px;
-  padding-left: 75px;
+  padding-left: 67px;
   padding-right: 65px;
-  padding-top: 62px;
+  padding-top: 59px;
 }
 
 .modal-name {
@@ -1953,14 +1953,15 @@ background: #68A2CA;
   margin: 0;
   min-width: 500px;
   height: 67px;
-  margin-left: -2px;
+  margin-left: 0px;
+  margin-bottom: 34px;
 }
 
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 55px;
-  right: 65px;
+  top: 53px;
+  right: 69px;
   width: 53px;
   height: 53px;
   background-color: #F2F2F2;
@@ -1995,6 +1996,7 @@ background: #68A2CA;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  margin-left: 3px;
 }
 
 .modal-structure {
@@ -2002,14 +2004,16 @@ background: #68A2CA;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  width: 575px;
 }
 
 .modal-structure:not(:last-child) {
-  margin-bottom: 40px;
+  margin-bottom: 35px;
 }
 
 .modal-label {
   min-height: 50px;
+  margin-top: 5px;
 }
 
 .modal-input-date {
@@ -2024,9 +2028,10 @@ background: #68A2CA;
   border-radius: 4px;
   color: #000;
   height: 50px;
-  min-width: 420px;
+  width: 420px;
   padding-left: 19px;
   padding-right: 200px;
+  align-self: start;
 }
 
 .modal-input-date::placeholder {
@@ -2079,8 +2084,8 @@ background: #68A2CA;
   font-size: 16px;
   line-height: 40px;
   color: #FF5757;
-  left: 145px;
-  bottom: -29px;
+  left: 155px;
+  bottom: -18px;
   width: 420px;
   height: 29px;
   opacity: 0;
@@ -2095,8 +2100,8 @@ background: #68A2CA;
   font-size: 16px;
   line-height: 40px;
   color: #000;
-  left: 145px;
-  bottom: -29px;
+  left: 155px;
+  bottom: -18px;
   width: 420px;
   height: 29px;
   opacity: 0;
@@ -2139,6 +2144,10 @@ background: #68A2CA;
   line-height: 40px;
 }
 
+.modal-structure.modal-numbers {
+  margin-bottom: 40px;
+}
+
 .modal-old-number {
   display: flex;
   justify-content: space-between;
@@ -2149,6 +2158,11 @@ background: #68A2CA;
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  width: 230px;
+}
+
+.modal-label-old {
+  margin-top: 5px;
 }
 
 .modal-label-young {
@@ -2157,7 +2171,8 @@ background: #68A2CA;
 
 .modal-attention-wrapper {
   position: relative;
-  margin-right: 11px;
+  margin-right: auto;
+  margin-top: 4px;
 }
 
 .modal-young-number-attention {
@@ -2223,7 +2238,7 @@ background: #68A2CA;
   width: 25px;
   top: 0;
   bottom: 0;
-  left: 19px;
+  left: 13px;
   margin: auto 0;
   display: flex;
   align-items: center;
@@ -2265,7 +2280,7 @@ background: #68A2CA;
   width: 25px;
   top: 0;
   bottom: 0;
-  right: 19px;
+  right: 13px;
   margin: auto 0;
   display: flex;
   align-items: center;
@@ -2335,6 +2350,7 @@ background: #68A2CA;
   font-size: 18px;
   line-height: 40px;
   text-align: center;
+  padding-left: 15px;
 }
 
 .modal-button-search {
