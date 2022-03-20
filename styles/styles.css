@@ -1931,6 +1931,10 @@ background: #68A2CA;
   display: none;
 }
 
+/* .modal-container-active {
+  display: flex;
+} */
+
 .modal {
   position: relative;
   font-family: "Pt Sans", "sans-serif", "Big Caslon";
