@@ -756,8 +756,6 @@ img {
   margin-top: 18px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* display: flex;
-  justify-content: flex-start; */
 }
 
 .footer-item:not(:last-child) {
@@ -1933,10 +1931,6 @@ background: #68A2CA;
   z-index: 2;
   display: none;
 }
-
-/* .modal-container-active {
-  display: flex;
-} */
 
 .modal {
   position: relative;
