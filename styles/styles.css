@@ -24,11 +24,9 @@ ul,ol {
   margin: 0;
   padding: 0;
   list-style: none;
-  /* outline: 1px dashed green; */
 }
 
 li {
-  /* outline: 1px dotted blue; */
   margin: 0;
   padding: 0;
 }
@@ -45,15 +43,9 @@ body {
   background-color: #F2F2F2;
   color: #000;
   margin: 0;
-  /* outline: 1px solid rgba(255, 99, 78, 0.5); */
   display: flex;
   flex-direction: column;
   min-height: 100%;
-}
-
-header {
-  color:#000;
-  background-color: #FFF;
 }
 
 img {
@@ -86,17 +78,17 @@ img {
   margin: 0 auto;
   width: 100%;
   background: inherit;
+  color:#000;
+  background-color: #FFF;
 }
 
 .page-header-container {
   width: 100%;
   margin: 0 auto;
-  /* outline: 1px solid greenyellow; */
   background: inherit;
 }
 
 .navigation {
-  /* outline: 1px dotted blue; */
   display: flex;
   width: 1060px;
   margin: 0 auto;
@@ -297,7 +289,6 @@ img {
   width: 100%;
   margin: 0 auto;
   background-color: #FFF;
-  /* outline: 1px solid red; */
 }
 
 .inner-main-container {
@@ -313,7 +304,6 @@ img {
   background-size: 100% 485px;
   background-repeat: no-repeat;
   padding-top: 51.4px;
-  /* outline: 1px solid red; */
 }
 
 .main-welcome::before {
@@ -334,7 +324,7 @@ img {
 
 .main-description {
   width: 100%;
-  height: 282px;
+  min-height: 282px;
   padding-top: 63px;
   background-color: #FFF;
 }
@@ -347,7 +337,7 @@ img {
   line-height: 36px;
   text-transform: uppercase;
   width: 720px;
-  height: 72px;
+  min-height: 72px;
 }
 
 .main-introduce-text {
@@ -496,7 +486,21 @@ img {
 }
 
 .advantages-item-image {
-  max-height: 384px;
+  min-height: 384px;
+}
+
+.advantages-image-house {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  max-width: 100%;
+}
+
+.advantages-image-branch {
+  display: block;
+  height: 100%;
+  object-fit: cover;
+  max-width: 100%;
 }
 
 .interests {
@@ -504,7 +508,7 @@ img {
   flex-direction: column;
   align-items: center;
   width: 100%;
-  max-height: 417px;
+  min-height: 417px;
   padding-top: 91px;
   padding-bottom: 93px;
 }
@@ -525,7 +529,7 @@ img {
   line-height: 26px;
   color: #333;
   width: 720px;
-  height: 52px;
+  min-height: 26px;
 }
 
 .interests-description-continue {
@@ -538,7 +542,7 @@ img {
   line-height: 26px;
   color: #333;
   width: 720px;
-  height: 52px;
+  min-height: 26px;
 }
 
 .button-search {
@@ -670,7 +674,6 @@ img {
   color: transparent;
 }
 
-/* не знаю какой псевдокласс */
 .subscribe-textbox:disabled {
   background: #FFFFFF;
   box-shadow: inset 0 0 0 2px #FF5757;
@@ -733,6 +736,7 @@ img {
   margin: 0 auto;
   display: flex;
   padding: 0 72px;
+  padding-right: 48px;
   padding-top: 10px;
   padding-bottom: 10px;
   justify-content: flex-start;
@@ -750,8 +754,10 @@ img {
 
 .footer-web-list {
   margin-top: 18px;
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* display: flex;
+  justify-content: flex-start; */
 }
 
 .footer-item:not(:last-child) {
@@ -793,8 +799,8 @@ img {
   display: block;
   min-width: 360px;
   height: 70px;
-  margin-top: 14px;
-  margin-left: 44px;
+  margin-top: 16px;
+  margin-left: 17px;
   margin-right: auto;
   text-align: center;
   font-size: 40px;
@@ -822,13 +828,14 @@ img {
   position: relative;
   min-width: 160px;
   min-height: 70px;
-  margin-top: 4px;
+  margin-top: 7px;
   margin-bottom: 14px;
   border-radius: 10px;
 }
 
 .footer-logo-icon {
   position: absolute;
+  left: 0;
   top: 4px;
   right: 0;
   bottom: 0;
@@ -1152,6 +1159,7 @@ img {
   border: 2px solid #FFF;
   padding: 0;
   border-image: auto;
+  appearance: none;
 }
 
 .catalog-range-textbox:hover {
@@ -1170,7 +1178,7 @@ img {
   padding-top: 5px;
 
 }
-/* вообще шляпа полная с этим фокусом, с рамкой и с тенью-_- */
+
 .catalog-range-textbox:focus-visible {
   box-shadow: 0px 0px 0px 3px #81B3D2,
   inset 0px 0px 0px 3px #81B3D2  ;
@@ -1233,6 +1241,10 @@ img {
 .catalog-toggle-max {
   top: -8px;
   right: -10px;
+}
+
+.catalog-range-toggle:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 }
 
 .catalog-range-toggle:focus-visible {
@@ -1310,7 +1322,7 @@ background: #68A2CA;
 .section-hotels {
   display: flex;
   margin: 0 auto;
-  width: 1057px;
+  width: 1058px;
   margin-bottom: 53px;
 }
 
@@ -1324,8 +1336,8 @@ background: #68A2CA;
   line-height: 39px;
   text-transform: uppercase;
   color: #000;
-  width: 340px;
-  margin-right: 192px;
+  width: 346px;
+  margin-right: 185px;
 }
 
 .select-sorting {
@@ -1338,7 +1350,7 @@ background: #68A2CA;
   padding-left: 16px;
   padding-right: 34px;
   padding-bottom: 2px;
-  margin-right: 81px;
+  margin-right: auto;
   height: 48px;
   border: 2px solid #E6E6E6;
   border-radius: 4px;
@@ -1365,7 +1377,9 @@ background: #68A2CA;
 .hotels-placing-list {
   margin: 0;
   padding: 0;
-  display: flex;
+  margin-right: -8px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
 }
 
 .hotels-placing-item:not(:last-child) {
@@ -1513,7 +1527,7 @@ background: #68A2CA;
 .product-card-more {
   display: block;
   min-width: 133px;
-  height: 37px;
+  min-height: 37px;
   background: #756257;
   font-weight: 700;
   font-size: 16px;
@@ -1544,7 +1558,7 @@ background: #68A2CA;
 .product-card-save{
   display: block;
   min-width: 140px;
-  height: 37px;
+  min-height: 37px;
   background: #83B3D3;
   font-weight: 700;
   font-size: 16px;
@@ -1705,8 +1719,8 @@ background: #68A2CA;
 .pagination-ref {
   display: block;
   position: relative;
-  width: 55px;
-  height: 55px;
+  min-width: 55px;
+  min-height: 55px;
   background: #83B3D3;
   text-align: center;
   border-radius: 4px;
@@ -1714,9 +1728,13 @@ background: #68A2CA;
   padding-top: calc(50% - 27px/2);
 }
 
-.pagination-ref-current {
+.pagination-number {
+  color: #fff;
+}
+
+.pagination-number-current {
+  color: #000;
   background: #F2F2F2;
-  color:#000;
 }
 
 .pagination-ref:hover {
@@ -1729,16 +1747,8 @@ background: #68A2CA;
   outline: none;
 }
 
-.pagination-ref:active .pagination-number {
+.pagination-ref:active {
   color: rgba(255, 255, 255, 0.3) ;
-}
-
-.pagination-number {
-  color: #fff;
-}
-
-.pagination-number-current {
-  color: #000;
 }
 
 .pagination-div {
@@ -1862,7 +1872,7 @@ background: #68A2CA;
   box-shadow: inset 0 0 0 3px #83B3D3;
   outline: none;
 }
-/* не знаю какой псевдокласс */
+
 .catalog-subscribe-textbox:disabled {
   background: #FFFFFF;
   box-shadow: inset 0 0 0 2px #FF5757;
@@ -1924,9 +1934,9 @@ background: #68A2CA;
   display: none;
 }
 
-.modal-container-active {
+/* .modal-container-active {
   display: flex;
-}
+} */
 
 .modal {
   position: relative;
