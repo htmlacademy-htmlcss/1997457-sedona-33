@@ -831,6 +831,11 @@ img {
   outline: none;
 }
 
+.footer-contacts-phone:active {
+  color: #756257;
+  opacity: 0.3;
+}
+
 .footer-logo {
   align-self: center;
   display: block;
@@ -876,7 +881,7 @@ img {
   padding-right: 72px;
   min-height: 407px;
   background-color: lightblue;
-  background-image: url("../images/catalog/catalog-background.jpg");
+  background-image: url("../images/catalog/catalog_background.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding-top: 35px;
@@ -1695,17 +1700,17 @@ img {
 }
 
 .button-more:hover {
-  background: #615048;
+  background: #68a2ca;
 }
 
 .button-more:focus-visible {
-  background: #615048;
-  box-shadow: inset 0 0 0 3px #83b3d3;
+  background: #68a2ca;
+  box-shadow: 0 0 0 3px #756257;
   outline: none;
 }
 
 .button-more:active > .button-more-text {
-  background: #615048;
+  background: #68a2ca;
   opacity: 0.3;
 }
 
@@ -1957,9 +1962,9 @@ img {
   display: none;
 }
 
-.modal-container-active {
+/* .modal-container-active {
   display: flex;
-}
+} */
 
 .modal {
   position: relative;
