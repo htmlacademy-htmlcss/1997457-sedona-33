@@ -586,19 +586,7 @@ input::-webkit-inner-spin-button {
   color: #333;
   width: 720px;
   min-height: 26px;
-}
-
-.interests-description-continue {
-  display: block;
-  margin: 0;
-  margin-right: 220px;
-  margin-left: 205px;
   margin-bottom: 56px;
-  font-size: 22px;
-  line-height: 26px;
-  color: #333;
-  width: 720px;
-  min-height: 26px;
 }
 
 .button-search {
