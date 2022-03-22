@@ -2087,9 +2087,9 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 
-.modal-container-active {
+/* .modal-container-active {
   display: flex;
-}
+} */
 
 .modal {
   position: relative;
