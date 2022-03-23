@@ -1225,8 +1225,8 @@ input::-webkit-inner-spin-button {
   padding: 0;
   border-image: auto;
   -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
+  -moz-appearance: textfield;
 }
 
 .catalog-range-textbox:hover {
@@ -2533,7 +2533,6 @@ input::-webkit-inner-spin-button {
   padding-left: 35px;
   padding-right: 35px;
   -webkit-appearance: none;
-  -moz-appearance: none;
   appearance: none;
   -moz-appearance: textfield;
 }
