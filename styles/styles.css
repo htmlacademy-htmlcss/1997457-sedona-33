@@ -57,6 +57,9 @@ img {
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
 }
 
 .visually-hidden {
@@ -586,19 +589,7 @@ input::-webkit-inner-spin-button {
   color: #333;
   width: 720px;
   min-height: 26px;
-}
-
-.interests-description-continue {
-  display: block;
-  margin: 0;
-  margin-right: 220px;
-  margin-left: 205px;
   margin-bottom: 56px;
-  font-size: 22px;
-  line-height: 26px;
-  color: #333;
-  width: 720px;
-  min-height: 26px;
 }
 
 .button-search {
@@ -1233,6 +1224,8 @@ input::-webkit-inner-spin-button {
   border: 2px solid #fff;
   padding: 0;
   border-image: auto;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   appearance: none;
 }
 
@@ -2099,9 +2092,9 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 
-/* .modal-container-active {
+.modal-container-active {
   display: flex;
-} */
+}
 
 .modal {
   position: relative;
@@ -2218,6 +2211,9 @@ input::-webkit-inner-spin-button {
   padding-right: 200px;
   padding-bottom: 4px;
   align-self: start;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .modal-input-date::placeholder {
@@ -2536,6 +2532,10 @@ input::-webkit-inner-spin-button {
   text-align: center;
   padding-left: 35px;
   padding-right: 35px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -moz-appearance: textfield;
 }
 
 .modal-button-search {
