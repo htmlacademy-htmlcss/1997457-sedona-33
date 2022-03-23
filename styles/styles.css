@@ -919,13 +919,13 @@ input::-webkit-inner-spin-button {
   width: 100%;
   padding-left: 71px;
   padding-right: 72px;
-  min-height: 407px;
+  min-height: 408px;
   background-color: #add8e6;
   background-image: url("../images/catalog/catalog_background.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
   padding-top: 40px;
-  margin-bottom: 45px;
+  margin-bottom: 44px;
 }
 
 .inner-header-title {
@@ -1031,15 +1031,16 @@ input::-webkit-inner-spin-button {
 }
 
 .catalog-form-div {
-  display: flex;
-  justify-content: flex-start;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 67px;
+  width: 367px;
 }
 
 .catalog-second-form-div {
   display: flex;
   justify-content: space-between;
-  min-width: 530px;
+  width: 530px;
   flex-wrap: wrap;
 }
 
@@ -1071,7 +1072,6 @@ input::-webkit-inner-spin-button {
   border: none;
   margin: 0;
   width: 150px;
-  margin-left: 67px;
   padding: 0;
   flex-wrap: wrap;
 }
@@ -1119,6 +1119,7 @@ input::-webkit-inner-spin-button {
 }
 
 .catalog-label {
+  display: block;
   text-align: start;
   position: relative;
   padding-left: 40px;
@@ -1149,7 +1150,7 @@ input::-webkit-inner-spin-button {
   height: 20px;
   background: #ffffff;
   border-radius: 4px;
-  top: 2px;
+  top: 1px;
   left: 1px;
 }
 
@@ -1180,7 +1181,7 @@ input::-webkit-inner-spin-button {
   height: 20px;
   background: #ffffff;
   border-radius: 50%;
-  top: 2px;
+  top: 1px;
   left: 1px;
 }
 
