@@ -312,7 +312,7 @@ input::-webkit-inner-spin-button {
   position: relative;
   width: auto;
   height: 485px;
-  background-color: lightblue;
+  background-color: #ADD8E6;
   background-image: url("../images/background_welcome.jpg");
   background-size: 100% 485px;
   background-repeat: no-repeat;
@@ -586,7 +586,19 @@ input::-webkit-inner-spin-button {
   color: #333;
   width: 720px;
   min-height: 26px;
+}
+
+.interests-description-continue {
+  display: block;
+  margin: 0;
+  margin-right: 220px;
+  margin-left: 205px;
   margin-bottom: 56px;
+  font-size: 22px;
+  line-height: 26px;
+  color: #333;
+  width: 720px;
+  min-height: 26px;
 }
 
 .button-search {
@@ -628,7 +640,7 @@ input::-webkit-inner-spin-button {
   flex-direction: column;
   align-items: center;
   min-height: 411px;
-  background-color: lightgreen;
+  background-color: #90ee90;
   background-image: url("../images/background_subscribe.jpg");
   background-size: 100% 411px;
   background-repeat: no-repeat;
@@ -917,7 +929,7 @@ input::-webkit-inner-spin-button {
   padding-left: 71px;
   padding-right: 72px;
   min-height: 407px;
-  background-color: lightblue;
+  background-color: #ADD8E6;
   background-image: url("../images/catalog/catalog_background.jpg");
   background-size: 100% 100%;
   background-repeat: no-repeat;
@@ -1243,12 +1255,12 @@ input::-webkit-inner-spin-button {
 .catalog-range-textbox:focus-visible {
   box-shadow: 0px 0px 0px 3px #81b3d2, inset 0px 0px 0px 3px #81b3d2;
   outline: none;
-  border-color: rgba(255, 255, 255, 1);
+  border-color: #fff;
 }
 
 .catalog-range-textbox:active {
   box-shadow: none;
-  border-color: rgba(255, 255, 255, 1);
+  border-color: #fff;
   background: #756257;
 }
 
@@ -1406,7 +1418,7 @@ input::-webkit-inner-spin-button {
 .select-sorting {
   font-size: 16px;
   line-height: 23px;
-  color: #333333;
+  color: #333;
   width: 287px;
   margin: 0;
   padding: 0;
@@ -2087,9 +2099,9 @@ input::-webkit-inner-spin-button {
   display: none;
 }
 
-/* .modal-container-active {
+.modal-container-active {
   display: flex;
-} */
+}
 
 .modal {
   position: relative;
